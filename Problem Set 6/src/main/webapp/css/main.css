@@ -1,0 +1,14 @@
+body {
+    padding: 5px;
+}
+
+img.logo {
+    display: block;
+    float: right;
+    width: 500px;
+}
+
+section#content {
+    min-height: 500px;
+    margin-bottom: 200px;
+}

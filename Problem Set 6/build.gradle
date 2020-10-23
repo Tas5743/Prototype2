@@ -1,0 +1,51 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.6.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+bootJar {
+    baseName = 'gs-serving-web-content'
+    version =  '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+
+    //
+    //  spring
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+    compile("org.springframework.boot:spring-boot-starter-security")
+    compile("org.springframework.boot:spring-boot-devtools")
+
+    //
+    //  NEED FOR PS6
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
+    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+
+    //
+    //  NEED FOR H2
+    // https://mvnrepository.com/artifact/com.h2database/h2
+    compile group: 'com.h2database', name: 'h2', version: '1.4.200'
+
+    // https://mvnrepository.com/artifact/com.google.guava/guava
+    compile group: 'com.google.guava', name: 'guava', version: '28.1-jre'
+
+    testCompile("junit:junit")
+}

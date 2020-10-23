@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dark Side of the Rainbow</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" th:href="@{'css/main.css'}">
+
+</head>
+<body>
+
+<div th:include="layout::header"></div>
+
+<section id="content">
+
+    <h1>Our Albums</h1>
+    <h2>Here is our inventory</h2>
+
+    <div class="alert alert-success" role="alert" th:text="${success}" th:if="${success}">
+        This is a success alert—check it out!
+    </div>
+
+    <!-- if -->
+    <h4 th:if="${albums.size() eq 0}">No albums were found</h4>
+
+    <!-- else -->
+    <table th:unless="${albums.size() eq 0}" class="table table-hover table-dark">
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Title</th>
+            <th scope="col">Artist</th>
+            <th scope="col">Date Released</th>
+            <th scope="col">Genre</th>
+            <th scope="col">Number of Tracks</th>
+            <th scope="col">Price</th>
+            <th scope="col">&nbsp;</th>
+            <th scope="col">&nbsp;</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr th:each="album : ${albums}">
+            <th scope="row" th:text="${album.albumId}">1</th>
+            <td th:text="${album.albumName}"></td>
+            <td th:text="${album.albumArtist}"></td>
+            <td th:text="${album.albumRelease}"></td>
+            <td th:text="${album.albumGenre}"></td>
+            <td th:text="${album.albumTracks}"></td>
+            <td th:text="${album.albumPrice}"></td>
+            <td>
+                <a th:if="${#httpServletRequest.remoteUser}" th:href="@{'/admin/albums/edit/' + ${album.albumId}}" class="btn btn-warning">Edit</a>
+            </td>
+            <td>
+                <a th:if="${#httpServletRequest.remoteUser}" th:href="@{'/albums/delete/' + ${album.albumId}}" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</section>
+
+<div th:include="layout::footer"></div>
+
+</body>
+</html>
