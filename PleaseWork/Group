@@ -1,0 +1,18 @@
+CREATE TABLE MOEMOE
+(
+    First_name        varchar(255),
+    Last_name         varchar(255),
+    Email             varchar(255),
+    Favorite_language varchar(255)
+);
+
+INSERT INTO Members
+values ('Tyler', 'Sterling', 'tas5743@psu.edu', 'Java');
+INSERT INTO Members
+values ('Rohan', 'Gajjar', 'rug5006@psu.edu', 'Java');
+INSERT INTO Members
+values ('Kate', 'Jin', 'sqj5298@psu.edu', 'Java');
+INSERT INTO Members
+values ('Jacob', 'Mcminn', 'jpm6170@psu.edu', 'Java');
+INSERT INTO Members
+values ('Kevin', 'Winters', 'kgw5082@psu.edu', 'Python');
