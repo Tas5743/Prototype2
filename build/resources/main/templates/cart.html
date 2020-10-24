@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Manager Stock View</title>
+    <link rel="stylesheet" type="text/css" media="all"
+          href="../../css/gtvg.css" th:href="@{/css/gtvg.css}" />
+</head>
+<body>
+
+<section>
+    <h3>Stock</h3>
+
+    <table th:unless="${items.size() eq 0}">
+        <thead>
+        <tr>
+            <th>Barcode</th>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Lower Quantity</th>
+            <th>Price</th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="item : ${items}">
+            <td><p th:text ="${item.barcode}"></p></td>
+            <td><p th:text="${item.name}"></p></td>
+            <td><p th:text="${item.quantity}"></p></td>
+            <td><p th:text="${item.lQuantity}"></p></td>
+            <td><p th:text="${item.price}"></p></td>
+            <td><a th:href="@{'/manager/items/edit/' + ${item.barcode}}">Edit</a></td>
+            <td><a th:href="@{'/manager/items/delete/' + ${item.barcode}}">Delete</a></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <button> <a href="/manager/items/add/">Add Items</a> </button>
+
+</section>
+</body>
+</html>
