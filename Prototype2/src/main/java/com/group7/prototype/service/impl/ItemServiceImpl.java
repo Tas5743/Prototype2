@@ -30,7 +30,7 @@ public class ItemServiceImpl implements ItemService {
     }
 
     @Override
-    public Item editItem(int barcode, String name, int quantity, int lQuantity, double price) {
+    public Item editItem(int barcode, String name, int quantity, int lQuantity, String price) {
         return itemRepository.editItem(barcode, name, quantity, lQuantity, price);
     }
 

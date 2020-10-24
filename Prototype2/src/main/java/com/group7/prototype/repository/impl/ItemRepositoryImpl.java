@@ -30,13 +30,13 @@ public class ItemRepositoryImpl implements ItemRepository {
     }
 
     @Override
-    public Item editItem(Integer barcode, String name, Integer quantity, Integer lQuantity, Double price) {
+    public Item editItem(Integer barcode, String name, Integer quantity, Integer lQuantity, String price) {
         Item foundItem = findItemByBarcode(barcode);
         if (foundItem != null){
             foundItem.setName(name);
             foundItem.setQuantity(quantity);
             foundItem.setlQuantity(lQuantity);
-            foundItem.setPrice(price);
+            foundItem.setPrice(Double.parseDouble(price));
         }
         return foundItem;
     }

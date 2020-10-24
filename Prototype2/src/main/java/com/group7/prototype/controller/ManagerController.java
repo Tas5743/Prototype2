@@ -33,13 +33,13 @@ public class ManagerController {
     }
 
     @PostMapping("/manager/items/add")
-    public String addItemFormSubmit(Model model, @RequestParam("itemBarcode")Integer itemBarcode
-            , @RequestParam("itemName") String itemName, @RequestParam("itemQuantity") Integer itemQuantity
-            , @RequestParam("itemLQuantity") Integer itemLQuantity, @RequestParam("itemPrice") String itemPrice){
+    public String addItemFormSubmit(Model model, @RequestParam("itemBarcode") int itemBarcode
+            , @RequestParam("itemName") String itemName, @RequestParam("itemQuantity") int itemQuantity
+            , @RequestParam("itemLQuantity") int itemLQuantity, @RequestParam("itemPrice") String itemPrice){
 
         Double DoubleitemPrice = 0.0;
 
-        if (itemBarcode == null){
+        if ((Integer) itemBarcode == null){
             model.addAttribute("errorMessage", "Item Barcode is required");
             return "addItem";
         }
@@ -49,7 +49,7 @@ public class ManagerController {
             return "addItem";
         }
 
-        else if (itemQuantity == null){
+        else if ((Integer)itemQuantity == null){
             model.addAttribute("errorMessage", "Item Quantity is required");
             return "addItem";
         }
@@ -61,13 +61,13 @@ public class ManagerController {
                 DoubleitemPrice = Double.valueOf(itemPrice);
             }catch (NumberFormatException nfex){
                 model.addAttribute("errorMessage", "Invalid bookprice");
-                return "addItem";
+                return "redirect:/manager/items/view";
             }
         }
         Item item = new Item(itemBarcode,itemName,itemQuantity,itemLQuantity,DoubleitemPrice);
         item = itemService.addItem(item);
         model.addAttribute("success",Boolean.TRUE);
-        return "redirect:stockview";
+        return "redirect:/manager/items/view";
     }
 
     @GetMapping(value = "/manager/items/edit/{barcode}")
@@ -82,22 +82,23 @@ public class ManagerController {
             return "editItem";
         }
         else {
-            return "redirect:stockview";
+            return "stockview";
         }
     }
 
     @PostMapping(value  = "/manager/items/edit")
     public String itemEdit(@RequestParam("Barcode") int Barcode,
                            @RequestParam("Name") String Name, @RequestParam("Quantity") int Quantity,
-                           @RequestParam("lQuantity") int lQuantity, @RequestParam("Price") Double Price ){
+                           @RequestParam("lQuantity") int lQuantity, @RequestParam("Price") String Price){
+
         itemService.editItem(Barcode,Name,Quantity,lQuantity,Price);
-        return "redirect:stockview";
+        return "redirect:/manager/items/view";
     }
 
     @GetMapping(value = "/manager/items/delete/{barcode}")
     public String deleteItem(@PathVariable int barcode){
         itemService.deleteItemByBarcode(barcode);
-        return "redirect:stockview";
+        return "redirect:/manager/items/view";
     }
 
 }

@@ -12,7 +12,7 @@ public interface ItemRepository {
 
     Item findItemByBarcode(int barcode);
 
-    Item editItem(Integer barcode, String name, Integer quantity, Integer lQuantity, Double price);
+    Item editItem(Integer barcode, String name, Integer quantity, Integer lQuantity, String price);
 
     boolean deleteItem(int barcode);
 }

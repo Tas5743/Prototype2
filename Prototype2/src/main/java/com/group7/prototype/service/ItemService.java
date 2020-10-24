@@ -12,7 +12,7 @@ public interface ItemService {
 
     Item addItem(Item item);
 
-    Item editItem(int barcode, String name, int quantity, int lQuantity, double price);
+    Item editItem(int barcode, String name, int quantity, int lQuantity, String price);
 
     boolean deleteItemByBarcode(int barcode);
 

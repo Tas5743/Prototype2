@@ -14,27 +14,29 @@
     <table th:unless="${items.size() eq 0}">
            <thead>
                <tr>
-                   <th></th>
-                   <th></th>
                    <th>Barcode</th>
                    <th>Name</th>
                    <th>Quantity</th>
                    <th>Lower Quantity</th>
                    <th>Price</th>
+                   <th></th>
+                   <th></th>
                </tr>
            </thead>
             <tbody>
             <tr th:each="item : ${items}">
-                <td><a th:href="@{'/manager/items/edit/' + ${item.barcode}}">Edit</a></td>
-                <td><a th:href="@{'/manager/items/delete/' + ${item.barcode}}">Delete</a></td>
                 <td><p th:text ="${item.barcode}"></p></td>
                 <td><p th:text="${item.name}"></p></td>
                 <td><p th:text="${item.quantity}"></p></td>
                 <td><p th:text="${item.lQuantity}"></p></td>
                 <td><p th:text="${item.price}"></p></td>
+                <td><a th:href="@{'/manager/items/edit/' + ${item.barcode}}">Edit</a></td>
+                <td><a th:href="@{'/manager/items/delete/' + ${item.barcode}}">Delete</a></td>
             </tr>
             </tbody>
     </table>
+
+    <button> <a href="/manager/items/add/">Add Items</a> </button>
 
 </section>
 </body>
