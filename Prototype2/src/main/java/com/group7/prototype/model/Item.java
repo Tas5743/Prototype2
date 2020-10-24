@@ -7,9 +7,9 @@ public class Item {
     private String name;
     private Integer quantity;
     private Integer lQuantity;
-    private Float price;
+    private Double price;
 
-    public Item(Integer barcode, String name, Integer quantity, Integer lQuantity, Float price) {
+    public Item(Integer barcode, String name, Integer quantity, Integer lQuantity, Double price) {
         this.barcode = barcode;
         this.name = name;
         this.quantity = quantity;
@@ -49,11 +49,11 @@ public class Item {
         this.lQuantity = lQuantity;
     }
 
-    public Float getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(Float price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 }
