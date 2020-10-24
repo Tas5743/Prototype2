@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Edit Item</title>
+    <link rel="stylesheet" type="text/css" media="all"
+          href="../../css/gtvg.css" th:href="@{/css/gtvg.css}" />
+</head>
+<body>
+
+<h1>Edit Item</h1>
+
+<form method="post" th:action="@{'/manager/items/edit'}">
+
+    <input type="hidden" name="Barcode"  th:value="${barcode}" />
+
+    <label>Name</label>
+    <input name="Name" th:value="${Name}"/>
+
+    <label>Quantity</label>
+    <input name="Quantity" th:value="${Quantity}"/>
+
+    <label>Low Quantity</label>
+    <input name="lQuantity" th:value="${lQuantity}"/>
+
+    <label>Price</label>
+    <input name="Price" th:value="${Price}"/>
+<div>
+
+</div>
+
+    <button class="btn btn-default" type="submit">Submit</button>
+</form>
+
+</body>
+</html>
