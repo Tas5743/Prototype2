@@ -21,9 +21,15 @@ public class customer {
     private ItemService itemService;
 
     @GetMapping("/customer/cart")
-    public String ABV(Model model){
+    public String cart(Model model){
         List<Item> itemList = this.itemService.findAllItems();
         model.addAttribute("items",itemList);
         return "cart";
+    }
+    @GetMapping("/customer/catalog")
+    public String catalog(Model model){
+        List<Item> itemList = this.itemService.findAllItems();
+        model.addAttribute("items",itemList);
+        return "catalog";
     }
 }

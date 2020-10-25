@@ -2,14 +2,13 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Manager Stock View</title>
-    <link rel="stylesheet" type="text/css" media="all"
-          href="../../css/gtvg.css" th:href="@{/css/gtvg.css}" />
+<!--    <link rel="stylesheet" type="text/css" media="all"-->
+<!--          href="../../css/gtvg.css" th:href="@{/css/gtvg.css}" />-->
 </head>
 <body>
 
 <section>
-    <h3>Stock</h3>
+    <h3>Cart</h3>
 
     <table th:unless="${items.size() eq 0}">
         <thead>
@@ -36,7 +35,8 @@
         </tbody>
     </table>
 
-    <button> <a href="/manager/items/add/">Add Items</a> </button>
+    <button> <a href="/customer/catalog">Back</a> </button>
+    <button> <a href="/customer/checkout">Checkout</a> </button>
 
 </section>
 </body>
