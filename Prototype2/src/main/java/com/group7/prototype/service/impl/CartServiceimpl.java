@@ -10,35 +10,35 @@ import java.util.List;
 
 @Service
 public class CartServiceimpl implements CartService {
-//TODO Fill in the methods, the first five can be done by simply calling the appropriate CartRepository Method
+
 
     @Autowired
     private CartRepository cartRepository;
 
     @Override
     public List<Cart> findAllCartItems() {
-        return null;
+        return cartRepository.findAllCartItems();
     }
 
     @Override
     public Cart addToCart(Cart Cart) {
-        return null;
+        return cartRepository.addToCart(Cart);
     }
 
 
     @Override
     public Cart findCartItemByName(String name) {
-        return null;
+        return cartRepository.findCartItemByName(name);
     }
 
     @Override
     public Cart editCart(String name, Integer quantity, String price) {
-        return null;
+        return cartRepository.editCart(name, quantity, price);
     }
 
     @Override
     public boolean deleteCartItem(String name) {
-        return false;
+        return cartRepository.deleteCartItem(name);
     }
 
     @Override

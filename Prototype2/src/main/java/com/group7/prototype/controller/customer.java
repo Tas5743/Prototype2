@@ -35,7 +35,7 @@ public class customer {
 
     @PostMapping("/customer/cart/edit{name}")
         public String editQuantity(Model model){
-        //TODO Write Method to edit quantity of a cart item - Rohan
+        //TODO Write Method to edit quantity of a cart item, use the name to find the specific cart object in the cart - Rohan
         return "redirect:/customer/cart";
     }
 
@@ -57,6 +57,11 @@ public class customer {
     public String addItemToCart(Model model){
         //TODO Add method to take the name and price of an item, and create a cart object with quantity 1. - Kevin
         return "redirect:/customer/catalog";
+    }
+
+    @GetMapping("/customer/checkout")
+    public String checkoout(Model model){
+        return "checkout";
     }
 
 
