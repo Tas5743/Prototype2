@@ -49,8 +49,7 @@ public class CartServiceimpl implements CartService {
 
     @Override
     public boolean clearCart() {
-        //TODO: Remove all cart objects from the Cart List
-        return false;
+        return cartRepository.cartList.clear();
     }
 
 }
