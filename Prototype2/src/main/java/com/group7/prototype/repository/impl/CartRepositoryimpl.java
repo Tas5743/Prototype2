@@ -1,49 +1,46 @@
 package com.group7.prototype.repository.impl;
 
 import com.group7.prototype.model.Cart;
-
 import com.group7.prototype.repository.CartRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
-
 import java.util.ArrayList;
 import java.util.List;
+import org.springframework.stereotype.Repository;
+import com.google.common.collect.MoreCollectors;
 
 @Repository
 public class CartRepositoryimpl implements CartRepository {
+    private List<Cart> cartList = new ArrayList();
 
-    private  List<Cart> cartList = new ArrayList<>();
+    public CartRepositoryimpl() {
+    }
 
-    //TODO Add code to each of these methods, use the ItemRepository as a reference - Kate
-
-
-    @Override
     public List<Cart> findAllCartItems() {
-        return null;
+        return this.cartList;
     }
 
-    @Override
-    public Cart addToCart(Cart Cart) {
-        return null;
+    public Cart addToCart(Cart cart) {
+        this.cartList.add(cart);
+        return cart;
     }
 
-    @Override
-    public Cart createCartItem(String itemName, String itemPrice, int quantity) {
-        return null;
+    public Cart createCartItem(String itemName, Double itemPrice, int quantity) {
+        return new Cart(itemName, itemPrice, quantity);
     }
 
-    @Override
     public Cart findCartItemByName(String name) {
-        return null;
+        return this.cartList.stream().filter((g) -> g.getName() == name).collect(MoreCollectors.onlyElement());
     }
 
-    @Override
-    public Cart editCart(String name, Integer quantity, String price) {
-        return null;
+    public Cart editCart(String name, Integer quantity) {
+        Cart foundCart = this.findCartItemByName(name);
+        if (foundCart != null) {
+            foundCart.setQuantity(quantity);
+        }
+        return foundCart;
     }
 
-    @Override
     public boolean deleteCartItem(String name) {
-        return false;
+        Cart foundCart = this.findCartItemByName(name);
+        return foundCart != null && this.cartList.remove(foundCart);
     }
 }

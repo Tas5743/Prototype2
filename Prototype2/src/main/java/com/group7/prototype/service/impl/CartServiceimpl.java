@@ -26,11 +26,6 @@ public class CartServiceimpl implements CartService {
         return cartRepository.addToCart(cart);
     }
 
-    @Override
-    public Cart createCartItem(String itemName, String itemPrice, int quantity) {
-//        return cartRepository.createCartItem();
-        return null;
-    }
 
     @Override
     public Cart findCartItemByName(String name) {
@@ -38,8 +33,8 @@ public class CartServiceimpl implements CartService {
     }
 
     @Override
-    public Cart editCart(String name, Integer quantity, String price) {
-        return cartRepository.editCart(name, quantity, price);
+    public Cart editCart(String name, Integer quantity) {
+        return cartRepository.editCart(name, quantity);
     }
 
     @Override
@@ -49,8 +44,10 @@ public class CartServiceimpl implements CartService {
 
     @Override
     public Double calculateTotal() {
-        //TODO: Write Method to calculate total cost of the Cart's contents
-        return null;
+        double total = 0.0;
+        List<Cart> cartList = cartRepository.findAllCartItems();
+        for (Cart cart : cartList) total = cart.getPrice() * cart.getQuantity();
+        return total;
     }
 
     @Override

@@ -12,7 +12,7 @@ public interface CartService {
 
     Cart findCartItemByName(String name);
 
-    Cart editCart(String name, Integer quantity, String price);
+    Cart editCart(String name, Integer quantity);
 
     boolean deleteCartItem(String name);
 
@@ -20,5 +20,4 @@ public interface CartService {
 
     boolean clearCart();
 
-    Cart createCartItem(String itemName, String itemPrice, int quantity);
 }
