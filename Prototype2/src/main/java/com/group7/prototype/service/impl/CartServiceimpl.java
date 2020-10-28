@@ -49,7 +49,8 @@ public class CartServiceimpl implements CartService {
 
     @Override
     public boolean clearCart() {
-        return cartRepository.cartList.clear();
+        //return cartRepository.cartList.clear();
+        return cartRepository.findAllCartItems().clear();
     }
 
 }
