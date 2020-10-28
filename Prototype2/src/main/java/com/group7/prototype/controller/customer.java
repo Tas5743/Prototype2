@@ -43,7 +43,7 @@ public class customer {
         return "redirect:/customer/cart";
     }
 
-    @PostMapping("/customer/cart/remove/{name}")
+    @GetMapping("/customer/cart/remove/{name}")
         public String removeCartItem(@PathVariable String name){
         cartService.deleteCartItem(name);
         //TODO Write Method to remove item from cart - Rohan
