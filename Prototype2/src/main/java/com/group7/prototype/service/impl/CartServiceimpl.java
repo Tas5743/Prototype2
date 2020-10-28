@@ -43,13 +43,19 @@ public class CartServiceimpl implements CartService {
 
     @Override
     public Double calculateTotal() {
-        //TODO: Write Method to calculate total cost of the Cart's contents
+
+
         return null;
     }
 
     @Override
     public boolean clearCart() {
-        //TODO: Remove all cart objects from the Cart List
+        try {
+            findAllCartItems().clear();
+        }
+        catch(Exception e) {
+            System.out.print("");
+        }
         return false;
     }
 
