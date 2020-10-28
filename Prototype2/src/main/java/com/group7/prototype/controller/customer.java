@@ -49,6 +49,13 @@ public class customer {
         //TODO Write Method to remove item from cart - Rohan
         return "redirect:/customer/cart";
     }
+    @PostMapping(value  = "/customer/cart/edit")
+    public String cartEdit(@RequestParam("Name") String Name,
+                            @RequestParam("Quantity") int Quantity,
+                            @RequestParam("Price") String Price){
+        cartService.editCart(Name,Quantity,Price);
+        return "redirect:/customer/cart";
+    }
 
 
     @GetMapping("/customer/catalog")
