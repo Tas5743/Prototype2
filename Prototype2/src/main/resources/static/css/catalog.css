@@ -17,6 +17,11 @@
   left:20px;
   top:220px;
 }
+.add_to_cart_button2{
+  position: relative;
+  left:106px;
+  top:200px;
+}
 
 #CocaCola {
   height: auto;

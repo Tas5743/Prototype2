@@ -44,7 +44,7 @@ public class customer {
     }
 
     @PostMapping("/customer/cart/remove/{name}")
-        public String removeCartItem(@PathVariable String name, Model model){
+        public String removeCartItem(@PathVariable String name){
         cartService.deleteCartItem(name);
         //TODO Write Method to remove item from cart - Rohan
         return "redirect:/customer/cart";
