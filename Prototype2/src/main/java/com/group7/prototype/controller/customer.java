@@ -43,14 +43,14 @@ public class customer {
         return "redirect:/customer/cart";
     }
 
-    @PostMapping("/customer/cart/remove/{name}")
+    @GetMapping("/customer/cart/remove/{name}")
         public String removeCartItem(@PathVariable String name){
         cartService.deleteCartItem(name);
         //TODO Write Method to remove item from cart - Rohan
         return "redirect:/customer/cart";
     }
     // TODO this needs its own HTML page - Jacob
-    @PostMapping(value  = "/customer/cart/edit")
+    @PostMapping(value = "/customer/cart/edit")
     public String cartEdit(@RequestParam("Name") String Name,
                             @RequestParam("Quantity") int Quantity,
                             @RequestParam("Price") String Price){
@@ -58,6 +58,11 @@ public class customer {
         return "redirect:/customer/cart";
     }
 
+    @GetMapping(value  = "/customer/cart/clear")
+    public String cartClear(){
+        cartService.clearCart();
+        return "redirect:/customer/cart";
+    }
 
     @GetMapping("/customer/catalog")
     public String catalog(Model model){

@@ -20,9 +20,9 @@ public class DataBaseLoader implements ApplicationListener<ContextRefreshedEvent
         // Item data
         Item i1 = new Item(67,"100% Orange Juice", 10, 1, 4.99);
         Item i2 = new Item(189,"CocaCola", 15, 5, 3.99);
-        Item i3 = new Item(15,"Manilla Wafers", 5, 1, 5.99);
-        Item i4 = new Item(2109,"Turkey Sandwich", 12, 3, 6.99);
-        Item i5 = new Item(1523,"Fried Chicken", 3, 1, 9.99);
+        Item i3 = new Item(15,"ManillaWafers", 5, 1, 5.99);
+        Item i4 = new Item(2109,"TurkeySandwich", 12, 3, 6.99);
+        Item i5 = new Item(1523,"FriedChicken", 3, 1, 9.99);
         this.itemRepository.addItem(i1);
         this.itemRepository.addItem(i2);
         this.itemRepository.addItem(i3);

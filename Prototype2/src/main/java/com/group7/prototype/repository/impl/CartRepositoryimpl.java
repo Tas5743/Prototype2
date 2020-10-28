@@ -28,7 +28,7 @@ public class CartRepositoryimpl implements CartRepository {
     }
 
     public Cart findCartItemByName(String name) {
-        return this.cartList.stream().filter((g) -> g.getName() == name).collect(MoreCollectors.onlyElement());
+        return this.cartList.stream().filter((g) -> g.getName().equals(name)).collect(MoreCollectors.onlyElement());
     }
 
     public Cart editCart(String name, Integer quantity) {

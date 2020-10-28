@@ -2,42 +2,36 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Cart</title>
     <link rel="stylesheet" th:href="@{/css/cart.css}"/>
 </head>
 <body>
 
 <section>
     <h3>Cart</h3>
-<!--    TODO fix commented out throws error, removed temporarily for fix-->
-<!--    <table th:unless="${items.size() eq 0}">-->
+<!--    <table th:unless="${cart.size() eq 0}">-->
     <table>
         <thead>
         <tr>
-            <th>Barcode</th>
             <th>Name</th>
             <th>Quantity</th>
-            <th>Lower Quantity</th>
             <th>Price</th>
             <th></th>
             <th></th>
         </tr>
         </thead>
         <tbody>
-        <tr th:each="item : ${items}">
-            <td><p th:text ="${item.barcode}"></p></td>
-            <td><p th:text="${item.name}"></p></td>
-            <td><p th:text="${item.quantity}"></p></td>
-            <td><p th:text="${item.lQuantity}"></p></td>
-            <td><p th:text="${item.price}"></p></td>
-            <td><a th:href="@{'/manager/items/edit/' + ${item.barcode}}">Edit</a></td>
-            <td><a th:href="@{'/manager/items/delete/' + ${item.barcode}}">Delete</a></td>
+        <tr th:each="cart : ${cart}">
+            <td><p th:text="${cart.name}"></p></td>
+            <td><p th:text="${cart.quantity}"></p></td>
+            <td><p th:text="${cart.price}"></p></td>
+            <td><a th:href="@{'/customer/cart/edit/' + ${cart.name}}">Edit</a></td>
+            <td><a th:href="@{'/customer/cart/remove/' + ${cart.name}}">Delete</a></td>
         </tr>
         </tbody>
     </table>
-
     <button> <a href="/customer/catalog">Back</a> </button>
     <button> <a href="/customer/checkout">Checkout</a> </button>
-
 </section>
 </body>
 </html>
