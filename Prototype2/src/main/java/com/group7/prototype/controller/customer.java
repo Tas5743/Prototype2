@@ -35,12 +35,17 @@ public class customer {
 
     @PostMapping("/customer/cart/edit{name}")
         public String editQuantity(@PathVariable String name, Model model){
+        Cart item = cartService.findCartItemByName(name);
+        if(item!=null){
+            model.addAttribute("Quantity",item.getQuantity());
+        }
         //TODO Write Method to edit quantity of a cart item, use the name to find the specific cart object in the cart - Rohan
         return "redirect:/customer/cart";
     }
 
     @PostMapping("/customer/cart/remove{name}")
         public String removeCartItem(@PathVariable String name, Model model){
+        cartService.deleteCartItem(name);
         //TODO Write Method to remove item from cart - Rohan
         return "redirect:/customer/cart";
     }

@@ -13,7 +13,7 @@
 
     <h3>Add An Item</h3>
 
-    <div th:if="${'errorMessage'}" th:text="${'errorMessage'}" style="color: #ff0000;">Invalid Entry</div>
+    <div th:if="${'error'}" th:text="${'errorMessage'}" style="color: #ff0000;">Invalid Entry</div>
 
     <form method="post" action="/manager/items/add">
 
