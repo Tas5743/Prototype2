@@ -2,15 +2,15 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<!--    <link rel="stylesheet" type="text/css" media="all"-->
-<!--          href="../../css/gtvg.css" th:href="@{/css/gtvg.css}" />-->
+    <link rel="stylesheet" th:href="@{/css/cart.css}"/>
 </head>
 <body>
 
 <section>
     <h3>Cart</h3>
-
-    <table th:unless="${items.size() eq 0}">
+<!--    TODO fix commented out throws error, removed temporarily for fix-->
+<!--    <table th:unless="${items.size() eq 0}">-->
+    <table>
         <thead>
         <tr>
             <th>Barcode</th>

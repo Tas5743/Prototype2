@@ -20,11 +20,17 @@ public class CartServiceimpl implements CartService {
         return cartRepository.findAllCartItems();
     }
 
+
     @Override
-    public Cart addToCart(Cart Cart) {
-        return cartRepository.addToCart(Cart);
+    public Cart addToCart(Cart cart) {
+        return cartRepository.addToCart(cart);
     }
 
+    @Override
+    public Cart createCartItem(String itemName, String itemPrice, int quantity) {
+//        return cartRepository.createCartItem();
+        return null;
+    }
 
     @Override
     public Cart findCartItemByName(String name) {
@@ -50,13 +56,10 @@ public class CartServiceimpl implements CartService {
 
     @Override
     public boolean clearCart() {
-        try {
-            findAllCartItems().clear();
-        }
-        catch(Exception e) {
-            System.out.print("");
-        }
-        return false;
+        //return cartRepository.cartList.clear();
+        //return cartRepository.findAllCartItems().clear(); You cant return a void value
+        cartRepository.findAllCartItems().clear();
+        return true;
     }
 
 }

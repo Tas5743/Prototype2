@@ -28,6 +28,11 @@ public class CartRepositoryimpl implements CartRepository {
     }
 
     @Override
+    public Cart createCartItem(String itemName, String itemPrice, int quantity) {
+        return null;
+    }
+
+    @Override
     public Cart findCartItemByName(String name) {
         return null;
     }

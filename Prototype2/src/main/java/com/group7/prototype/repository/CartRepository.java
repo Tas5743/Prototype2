@@ -10,11 +10,12 @@ public interface CartRepository {
 
     Cart addToCart(Cart Cart);
 
+    Cart createCartItem(String itemName, String itemPrice, int quantity);
+
     Cart findCartItemByName(String name);
 
     Cart editCart(String name, Integer quantity, String price);
 
     boolean deleteCartItem(String name);
-
 
 }

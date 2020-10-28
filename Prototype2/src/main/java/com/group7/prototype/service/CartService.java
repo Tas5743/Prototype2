@@ -20,6 +20,5 @@ public interface CartService {
 
     boolean clearCart();
 
-
-
+    Cart createCartItem(String itemName, String itemPrice, int quantity);
 }
