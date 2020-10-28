@@ -66,8 +66,10 @@ public class customer {
     }
 
     @PostMapping("/customer/catalog/{barcode}")
-    public String addItemToCart(@PathVariable int barcode, Model model){
+    public String addItemToCart(@RequestParam("itemName") String itemName, @RequestParam("itemPrice") String itemPrice){
         //TODO Add method to take the name and price of an item, and create a cart object with quantity 1. - Kevin
+        @RequestParam("Quantity") int Quantity = 0;
+        Cart item = cartService.addCartItem(itemName, itemPrice, Quantity);
         return "redirect:/customer/catalog";
     }
 
