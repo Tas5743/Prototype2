@@ -53,7 +53,7 @@ public class customer {
     public String cartEdit(@RequestParam("Name") String Name,
                             @RequestParam("Quantity") int Quantity,
                             @RequestParam("Price") String Price){
-        cartService.editCart(Name,Quantity,Price);
+        cartService.editCart(Name,Quantity);
         return "redirect:/customer/cart";
     }
 
@@ -64,18 +64,20 @@ public class customer {
         model.addAttribute("items",itemList);
         return "catalog";
     }
-
+// Removed @RequestParam("itemName") String itemName, @RequestParam("itemPrice" String itemPrice)- Tyler
     @PostMapping("/customer/catalog/{barcode}")
-    public String addItemToCart(@RequestParam("itemName") String itemName, @RequestParam("itemPrice") String itemPrice){
-        //TODO Add method to take the name and price of an item, and create a cart object with quantity 1. - Kevin
+    public String addItemToCart(@PathVariable int barcode) {
         //@RequestParam("Quantity") int Quantity = 0;
-        int Quantity = 0;
-        Cart item = cartService.createCartItem(itemName, itemPrice, Quantity);
+        Item select = itemService.findItemByBarcode(barcode);
+        int Quantity = 1;
+        Cart item = new Cart(select.getName(), select.getPrice(), Quantity);
+        cartService.addToCart(item);
         return "redirect:/customer/catalog";
     }
 
     @GetMapping("/customer/checkout")
-    public String checkoout(Model model){
+    public String checkout(Model model){
+        cartService.clearCart();
         return "checkout";
     }
 

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d234280d-e656-45c1-8161-1ebcb69064d4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -7,14 +10,163 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="prototype" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="ProjectId" id="1jL8eEFzGbdq34eJDoINqwmpyq7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/impl" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tyaus\Desktop\Real Homework\Prototype2-main\Prototype2\src\main\java\com\group7\prototype\repository\impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tyaus\Desktop\Real Homework\Prototype2-main\Prototype2\src\main\java\com\group7\prototype\service\impl" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle " />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PrototypeApplication">
+    <configuration name="Prototype2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Prototype2" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PrototypeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="prototype.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.group7.prototype.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.group7.prototype.PrototypeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.PrototypeApplication" />
+        <item itemvalue="Gradle.Prototype2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="d234280d-e656-45c1-8161-1ebcb69064d4" name="Default Changelist" comment="" />
       <created>1603572104615</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603572104615</updated>
+      <workItem from="1603900342492" duration="7286000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1603909484688">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603909484688" />
+    <state x="779" y="215" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1603911685846">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="779" y="215" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603911685846" />
+    <state x="742" y="393" width="437" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1603909128808">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="742" y="393" width="437" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603909128808" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1603911813771">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603911813771" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1603911813771">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603911813771" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1603911813771">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603911813771" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1603911813771">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603911813771" />
+    <state width="1877" height="285" key="GridCell.Tab.1.bottom" timestamp="1603911813771">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.1.bottom/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603911813771" />
+    <state width="1877" height="285" key="GridCell.Tab.1.center" timestamp="1603911813771">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.1.center/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603911813771" />
+    <state width="1877" height="285" key="GridCell.Tab.1.left" timestamp="1603911813771">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.1.left/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603911813771" />
+    <state width="1877" height="285" key="GridCell.Tab.1.right" timestamp="1603911813771">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.1.right/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603911813771" />
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1603900361071">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603900361071" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1603910069657">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603910069657" />
   </component>
 </project>
