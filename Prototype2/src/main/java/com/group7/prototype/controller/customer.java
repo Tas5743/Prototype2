@@ -33,7 +33,7 @@ public class customer {
         return "cart";
     }
 
-    @PostMapping("/customer/cart/edit{name}")
+    @PostMapping("/customer/cart/edit/{name}")
         public String editQuantity(@PathVariable String name, Model model){
         Cart item = cartService.findCartItemByName(name);
         if(item!=null){
@@ -43,12 +43,13 @@ public class customer {
         return "redirect:/customer/cart";
     }
 
-    @PostMapping("/customer/cart/remove{name}")
-        public String removeCartItem(@PathVariable String name, Model model){
+    @PostMapping("/customer/cart/remove/{name}")
+        public String removeCartItem(@PathVariable String name){
         cartService.deleteCartItem(name);
         //TODO Write Method to remove item from cart - Rohan
         return "redirect:/customer/cart";
     }
+    // TODO this needs its own HTML page - Jacob
     @PostMapping(value  = "/customer/cart/edit")
     public String cartEdit(@RequestParam("Name") String Name,
                             @RequestParam("Quantity") int Quantity,

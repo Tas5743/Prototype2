@@ -1,0 +1,33 @@
+#catalog_items{
+  width:100%;
+}
+.item{
+  margin-top:10px;
+  width: 200px;
+  height: 250px;
+/*  outline-color: grey;
+  outline-width: 15px;
+  outline-style: solid;*/
+  border-radius: 5px;
+  background-color: rgba(50,50,50,1);
+  color: rgba(20,20,20,1);
+}
+.add_to_cart_button{
+  position: relative;
+  left:20px;
+  top:220px;
+}
+.add_to_cart_button2{
+  position: relative;
+  left:106px;
+  top:200px;
+}
+
+#CocaCola {
+  height: auto;
+  width: auto;
+}
+
+#address_bar{
+  padding-top:15px;
+}
