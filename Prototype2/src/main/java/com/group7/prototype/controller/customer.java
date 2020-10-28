@@ -34,14 +34,26 @@ public class customer {
     }
 
     @PostMapping("/customer/cart/edit{name}")
-        public String editQuantity(Model model){
+        public String editQuantity(@PathVariable String name, Model model){
+        Cart item = cartService.findCartItemByName(name);
+        if(item!=null){
+            model.addAttribute("Quantity",item.getQuantity());
+        }
         //TODO Write Method to edit quantity of a cart item, use the name to find the specific cart object in the cart - Rohan
         return "redirect:/customer/cart";
     }
 
     @PostMapping("/customer/cart/remove{name}")
-        public String removeCartItem(Model model){
+        public String removeCartItem(@PathVariable String name, Model model){
+        cartService.deleteCartItem(name);
         //TODO Write Method to remove item from cart - Rohan
+        return "redirect:/customer/cart";
+    }
+    @PostMapping(value  = "/customer/cart/edit")
+    public String cartEdit(@RequestParam("Name") String Name,
+                            @RequestParam("Quantity") int Quantity,
+                            @RequestParam("Price") String Price){
+        cartService.editCart(Name,Quantity,Price);
         return "redirect:/customer/cart";
     }
 
@@ -54,7 +66,7 @@ public class customer {
     }
 
     @PostMapping("/customer/catalog/{barcode}")
-    public String addItemToCart(Model model){
+    public String addItemToCart(@PathVariable int barcode, Model model){
         //TODO Add method to take the name and price of an item, and create a cart object with quantity 1. - Kevin
         return "redirect:/customer/catalog";
     }
