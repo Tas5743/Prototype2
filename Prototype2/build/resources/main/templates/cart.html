@@ -24,13 +24,14 @@
         <tr th:each="cart : ${cart}">
             <td><p th:text="${cart.name}"></p></td>
             <td><p th:text="${cart.quantity}"></p></td>
-            <td><p th:text="${cart.price}"></p></td>
+            <td><p th:text="${cart.dPrice()}"></p></td>
             <td><a th:href="@{'/customer/cart/edit/' + ${cart.name}}">Edit</a></td>
             <td><a th:href="@{'/customer/cart/remove/' + ${cart.name}}">Delete</a></td>
         </tr>
         </tbody>
     </table>
     <button> <a href="/customer/catalog">Back</a> </button>
+    <button> <a th:href="@{'/customer/cart/clear/'}">Clear Cart</a></button>
     <button> <a href="/customer/checkout">Checkout</a> </button>
 </section>
 </body>

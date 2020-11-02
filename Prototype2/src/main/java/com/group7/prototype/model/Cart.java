@@ -1,5 +1,7 @@
 package com.group7.prototype.model;
 
+import java.text.DecimalFormat;
+
 public class Cart {
 
     //
@@ -36,6 +38,8 @@ public class Cart {
     public void setQuantity(Integer quantity) {
         this.quantity = quantity;
     }
+
+    public String dPrice(){return new DecimalFormat("$#.###").format(this.price*this.quantity);}
 
 
 }

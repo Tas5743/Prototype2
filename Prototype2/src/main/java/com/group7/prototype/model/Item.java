@@ -1,5 +1,8 @@
 package com.group7.prototype.model;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+
 public class Item {
 
     //Instance data
@@ -55,5 +58,8 @@ public class Item {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public String dPrice() {return new DecimalFormat("$#.###").format(this.price);
     }
 }

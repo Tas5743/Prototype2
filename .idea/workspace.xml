@@ -23,7 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d234280d-e656-45c1-8161-1ebcb69064d4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
@@ -36,20 +35,22 @@
       <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/bootstrap/DataBaseLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/bootstrap/DataBaseLoader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/controller/customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/controller/customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/repository/impl/CartRepositoryimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/repository/impl/CartRepositoryimpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/static/css/catalog.css" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/static/css/catalog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/model/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/model/Cart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/model/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/model/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/service/CartService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/service/CartService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/service/impl/CartServiceimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/service/impl/CartServiceimpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/static/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/addItem.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/addItem.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/checkout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/editItem.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/editItem.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/stockview.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/stockview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/controller/customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/controller/customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/repository/impl/CartRepositoryimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/repository/impl/CartRepositoryimpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/model/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/model/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/CartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/impl/CartServiceimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/impl/CartServiceimpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/stockview.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/stockview.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,11 +86,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jL8eEFzGbdq34eJDoINqwmpyq7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
@@ -102,14 +110,20 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="d234280d-e656-45c1-8161-1ebcb69064d4" name="Default Changelist" comment="" />
       <created>1603572104615</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603572104615</updated>
+      <workItem from="1604304102225" duration="818000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -124,38 +138,38 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom" timestamp="1603922095660">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604304920011">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603922095660" />
-    <state width="1877" height="279" key="GridCell.Tab.0.center" timestamp="1603922095660">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604304920011" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604304920011">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603922095660" />
-    <state width="1877" height="279" key="GridCell.Tab.0.left" timestamp="1603922095660">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604304920011" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604304920011">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603922095660" />
-    <state width="1877" height="279" key="GridCell.Tab.0.right" timestamp="1603922095660">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604304920011" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604304920011">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603922095660" />
-    <state width="1877" height="279" key="GridCell.Tab.1.bottom" timestamp="1603922095661">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604304920011" />
+    <state width="1877" height="282" key="GridCell.Tab.1.bottom" timestamp="1604304920011">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.1.bottom/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603922095661" />
-    <state width="1877" height="279" key="GridCell.Tab.1.center" timestamp="1603922095660">
+    <state width="1877" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604304920011" />
+    <state width="1877" height="282" key="GridCell.Tab.1.center" timestamp="1604304920011">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.1.center/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603922095660" />
-    <state width="1877" height="279" key="GridCell.Tab.1.left" timestamp="1603922095660">
+    <state width="1877" height="282" key="GridCell.Tab.1.center/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604304920011" />
+    <state width="1877" height="282" key="GridCell.Tab.1.left" timestamp="1604304920011">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.1.left/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603922095660" />
-    <state width="1877" height="279" key="GridCell.Tab.1.right" timestamp="1603922095660">
+    <state width="1877" height="282" key="GridCell.Tab.1.left/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604304920011" />
+    <state width="1877" height="282" key="GridCell.Tab.1.right" timestamp="1604304920011">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.1.right/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603922095660" />
+    <state width="1877" height="282" key="GridCell.Tab.1.right/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604304920011" />
     <state width="913" height="351" key="GridCell.Tab.2.bottom" timestamp="1603921818497">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -196,7 +210,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/impl/CartServiceimpl.java</url>
-          <line>41</line>
+          <line>42</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">

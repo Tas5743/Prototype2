@@ -16,7 +16,7 @@ public interface CartService {
 
     boolean deleteCartItem(String name);
 
-    Double calculateTotal();
+    String calculateTotal();
 
     boolean clearCart();
 

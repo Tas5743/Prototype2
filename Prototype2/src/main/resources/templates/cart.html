@@ -24,7 +24,7 @@
         <tr th:each="cart : ${cart}">
             <td><p th:text="${cart.name}"></p></td>
             <td><p th:text="${cart.quantity}"></p></td>
-            <td><p th:text="${cart.price}"></p></td>
+            <td><p th:text="${cart.dPrice()}"></p></td>
             <td><a th:href="@{'/customer/cart/edit/' + ${cart.name}}">Edit</a></td>
             <td><a th:href="@{'/customer/cart/remove/' + ${cart.name}}">Delete</a></td>
         </tr>

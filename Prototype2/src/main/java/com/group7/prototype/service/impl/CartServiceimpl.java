@@ -6,6 +6,7 @@ import com.group7.prototype.service.CartService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.text.DecimalFormat;
 import java.util.List;
 
 @Service
@@ -43,11 +44,11 @@ public class CartServiceimpl implements CartService {
     }
 
     @Override
-    public Double calculateTotal() {
+    public String calculateTotal() {
         double total = 0.0;
         List<Cart> cartList = cartRepository.findAllCartItems();
         for (Cart cart : cartList) total = cart.getPrice() * cart.getQuantity();
-        return total;
+        return new DecimalFormat("$#.###").format(total);
     }
 
     @Override
