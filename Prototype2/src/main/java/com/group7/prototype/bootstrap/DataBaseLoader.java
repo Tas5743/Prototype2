@@ -18,7 +18,7 @@ public class DataBaseLoader implements ApplicationListener<ContextRefreshedEvent
     public void onApplicationEvent(ContextRefreshedEvent event) {
 
         // Item data
-        Item i1 = new Item(67,"100% Orange Juice", 10, 1, 4.99);
+        Item i1 = new Item(67,"Pudding", 10, 1, 4.99);
         Item i2 = new Item(189,"CocaCola", 15, 5, 3.99);
         Item i3 = new Item(15,"ManillaWafers", 5, 1, 5.99);
         Item i4 = new Item(2109,"TurkeySandwich", 12, 3, 6.99);
