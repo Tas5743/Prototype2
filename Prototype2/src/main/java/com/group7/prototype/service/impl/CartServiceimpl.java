@@ -29,18 +29,18 @@ public class CartServiceimpl implements CartService {
 
 
     @Override
-    public Cart findCartItemByName(String name) {
-        return cartRepository.findCartItemByName(name);
+    public Cart findCartItemByIndex(int index) {
+        return cartRepository.findCartItemByIndex(index);
     }
 
     @Override
-    public Cart editCart(String name, Integer quantity) {
-        return cartRepository.editCart(name, quantity);
+    public Cart editCart(int index, Integer quantity) {
+        return cartRepository.editCart(index, quantity);
     }
 
     @Override
-    public boolean deleteCartItem(String name) {
-        return cartRepository.deleteCartItem(name);
+    public boolean deleteCartItem(int index) {
+        return cartRepository.deleteCartItem(index);
     }
 
     @Override
@@ -58,5 +58,7 @@ public class CartServiceimpl implements CartService {
         cartRepository.findAllCartItems().clear();
         return true;
     }
+    @Override
+    public Cart createCartItem(String itemName, Double itemPrice, int quantity){return cartRepository.createCartItem(itemName, itemPrice, quantity);}
 
 }

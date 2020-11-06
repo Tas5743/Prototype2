@@ -33,9 +33,9 @@ public class customer {
         return "cart";
     }
 
-    @PostMapping("/customer/cart/edit/{name}")
-        public String editQuantity(@PathVariable String name, Model model){
-        Cart item = cartService.findCartItemByName(name);
+    @PostMapping("/customer/cart/edit/{index}")
+        public String editQuantity(@PathVariable int index, Model model){
+        Cart item = cartService.findCartItemByIndex(index);
         if(item!=null){
             model.addAttribute("Quantity",item.getQuantity());
         }
@@ -43,18 +43,20 @@ public class customer {
         return "redirect:/customer/cart";
     }
 
-    @GetMapping("/customer/cart/remove/{name}")
-        public String removeCartItem(@PathVariable String name){
-        cartService.deleteCartItem(name);
+    @GetMapping("/customer/cart/remove/{index}")
+        public String removeCartItem(@PathVariable int index){
+        cartService.deleteCartItem(index);
         //TODO Write Method to remove item from cart - Rohan
         return "redirect:/customer/cart";
     }
     // TODO this needs its own HTML page - Jacob
-    @PostMapping(value = "/customer/cart/edit")
+    // This isn't meant to  have its own edit page, this suppose to update the quantity of an item in the customer's cart.
+    //With that said I tried correcting it only to realize that this would require a n
+    @PostMapping(value = "/customer/cart/edit/")
     public String cartEdit(@RequestParam("Name") String Name,
                             @RequestParam("Quantity") int Quantity,
                             @RequestParam("Price") String Price){
-        cartService.editCart(Name,Quantity);
+        //cartService.editCart(index,Quantity);
         return "redirect:/customer/cart";
     }
 
@@ -76,7 +78,7 @@ public class customer {
         //@RequestParam("Quantity") int Quantity = 0;
         Item select = itemService.findItemByBarcode(barcode);
         int Quantity = 1;
-        Cart item = new Cart(select.getName(), select.getPrice(), Quantity);
+        Cart item = cartService.createCartItem(select.getName(), select.getPrice(), Quantity);
         cartService.addToCart(item);
         return "redirect:/customer/catalog";
     }

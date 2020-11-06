@@ -22,7 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d234280d-e656-45c1-8161-1ebcb69064d4" name="Default Changelist" comment="">
+    <list default="true" id="d234280d-e656-45c1-8161-1ebcb69064d4" name="Default Changelist" comment="More Tests">
+      <change afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/model/Transactions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/repository/TransactionsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/repository/impl/TransactionsRepositoryimpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/TransactionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/impl/TransactionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/products/none.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
@@ -30,27 +36,25 @@
       <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/bootstrap/DataBaseLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/bootstrap/DataBaseLoader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/controller/customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/controller/customer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/model/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/model/Cart.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/model/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/model/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/repository/CartRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/repository/CartRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/repository/impl/CartRepositoryimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/repository/impl/CartRepositoryimpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/service/CartService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/service/CartService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/service/impl/CartServiceimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/service/impl/CartServiceimpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/static/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/stockview.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/stockview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/controller/customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/controller/customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/model/Cart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/model/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/repository/CartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/repository/CartRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/repository/impl/CartRepositoryimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/repository/impl/CartRepositoryimpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/CartService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/impl/CartServiceimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/impl/CartServiceimpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/stockview.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/stockview.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +86,23 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Tag Library Descriptor" />
+        <option value="spring-beans.schema" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="iJustWantToSwitchToAnExistingBranch" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jL8eEFzGbdq34eJDoINqwmpyq7" />
@@ -91,6 +111,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="build" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -98,10 +123,105 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Prototype2/src/main/resources/products" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.group7.prototype.service.impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tyaus\Desktop\Real Homework\Prototype\Prototype2\src\main\resources\products" />
+      <recent name="C:\Users\tyaus\Desktop\Real Homework\Prototype\Prototype2" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tyaus\Desktop\Real Homework\Prototype" />
+      <recent name="C:\Users\tyaus\Desktop\Real Homework\Prototype\Prototype2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PrototypeApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManagerControllerTest.ABV" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Prototype2" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.group7.prototype.controller.ManagerControllerTest.ABV&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Prototype2 [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Prototype2" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Prototype2 [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Prototype2" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="PrototypeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="prototype.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.group7.prototype.PrototypeApplication" />
@@ -109,6 +229,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Prototype2 [test]" />
+        <item itemvalue="Gradle.ManagerControllerTest.ABV" />
+        <item itemvalue="Gradle.Prototype2 [dependencies]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -119,7 +246,66 @@
       <option name="presentableId" value="Default" />
       <updated>1603572104615</updated>
       <workItem from="1604304102225" duration="818000" />
+      <workItem from="1604398845690" duration="1203000" />
+      <workItem from="1604415825567" duration="21004000" />
     </task>
+    <task id="LOCAL-00001" summary="I thought I was working with Jenkins, where did all of this come from?">
+      <created>1604394352952</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604394352952</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Ants">
+      <created>1604396861594</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604396861594</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Ants">
+      <created>1604415975588</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604415975588</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Ants">
+      <created>1604417900648</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604417900648</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Ants">
+      <created>1604418036632</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604418036632</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Ants">
+      <created>1604418217804</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604418217804</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Ants">
+      <created>1604423911463</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604423911463</updated>
+    </task>
+    <task id="LOCAL-00008" summary="No Ants">
+      <created>1604428157194</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1604428157194</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,39 +323,77 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="I thought I was working with Jenkins, where did all of this come from?" />
+    <MESSAGE value="Ants" />
+    <MESSAGE value="No Ants" />
+    <option name="LAST_COMMIT_MESSAGE" value="No Ants" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604304920011">
+    <state x="552" y="165" key="#Plugins" timestamp="1604442798142">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604304920011" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604304920011">
+    <state x="552" y="165" key="#Plugins/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604442798142" />
+    <state x="440" y="99" key="#Project_Structure" timestamp="1604473575718">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604304920011" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604304920011">
+    <state x="440" y="99" key="#Project_Structure/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604473575718" />
+    <state x="690" y="279" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1604695990507">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604304920011" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604304920011">
+    <state x="690" y="279" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604695990507" />
+    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1604696029893">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604304920011" />
-    <state width="1877" height="282" key="GridCell.Tab.1.bottom" timestamp="1604304920011">
+    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604696029893" />
+    <state x="515" y="449" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1604473197435">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604304920011" />
-    <state width="1877" height="282" key="GridCell.Tab.1.center" timestamp="1604304920011">
+    <state x="515" y="449" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604473197435" />
+    <state x="345" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604687961372">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.center/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604304920011" />
-    <state width="1877" height="282" key="GridCell.Tab.1.left" timestamp="1604304920011">
+    <state x="345" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604687961372" />
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604417778836">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.left/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604304920011" />
-    <state width="1877" height="282" key="GridCell.Tab.1.right" timestamp="1604304920011">
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604417778836" />
+    <state x="740" y="266" key="FileChooserDialogImpl" timestamp="1604421065521">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.right/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604304920011" />
+    <state x="740" y="266" key="FileChooserDialogImpl/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604421065521" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604694840071">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604694840071" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604694840070">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604694840070" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604694840070">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604694840070" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604694840070">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604694840070" />
+    <state width="1877" height="282" key="GridCell.Tab.1.bottom" timestamp="1604694840071">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604694840071" />
+    <state width="1877" height="282" key="GridCell.Tab.1.center" timestamp="1604694840071">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.1.center/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604694840071" />
+    <state width="1877" height="282" key="GridCell.Tab.1.left" timestamp="1604694840071">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.1.left/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604694840071" />
+    <state width="1877" height="282" key="GridCell.Tab.1.right" timestamp="1604694840071">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.1.right/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604694840071" />
     <state width="913" height="351" key="GridCell.Tab.2.bottom" timestamp="1603921818497">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -186,14 +410,26 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="913" height="351" key="GridCell.Tab.2.right/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603921818497" />
+    <state x="552" y="244" key="Vcs.Push.Dialog.v2" timestamp="1604428158354">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604428158354" />
     <state x="1258" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603920775525">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1258" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603920775525" />
+    <state x="722" y="274" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1604473037199">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="722" y="274" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604473037199" />
     <state x="0" y="0" width="961" height="1050" key="dock-window-1" timestamp="1603921138360">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="0" y="0" width="961" height="1050" key="dock-window-1/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603921138360" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1604445441505">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604445441505" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -205,13 +441,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/repository/impl/CartRepositoryimpl.java</url>
-          <line>42</line>
+          <line>51</line>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/impl/CartServiceimpl.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/controller/customer.java</url>

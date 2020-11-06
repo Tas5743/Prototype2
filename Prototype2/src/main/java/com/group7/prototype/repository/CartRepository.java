@@ -12,10 +12,10 @@ public interface CartRepository {
 
     Cart createCartItem(String itemName, Double itemPrice, int quantity);
 
-    Cart findCartItemByName(String name);
+    Cart findCartItemByIndex(int index);
 
-    Cart editCart(String name, Integer quantity);
+    Cart editCart(Integer index, Integer quantity);
 
-    boolean deleteCartItem(String name);
+    boolean deleteCartItem(int index);
 
 }

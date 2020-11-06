@@ -11,9 +11,6 @@ import com.google.common.collect.MoreCollectors;
 public class CartRepositoryimpl implements CartRepository {
     private List<Cart> cartList = new ArrayList();
 
-    public CartRepositoryimpl() {
-    }
-
     public List<Cart> findAllCartItems() {
         return this.cartList;
     }
@@ -23,24 +20,36 @@ public class CartRepositoryimpl implements CartRepository {
         return cart;
     }
 
+
+    public Integer findNextCartId() {
+        Integer maxValue = 0;
+        for (Cart cart : cartList) {
+            if (cart.getIndex() != null && cart.getIndex() > maxValue) {
+                maxValue =cart.getIndex();
+            }
+        }
+        return maxValue + 1;
+    }
+
     public Cart createCartItem(String itemName, Double itemPrice, int quantity) {
-        return new Cart(itemName, itemPrice, quantity);
+        int index = findNextCartId();
+        return new Cart(index,itemName, itemPrice, quantity);
     }
 
-    public Cart findCartItemByName(String name) {
-        return this.cartList.stream().filter((g) -> g.getName().equals(name)).collect(MoreCollectors.onlyElement());
+    public Cart findCartItemByIndex(int index) {
+        return this.cartList.stream().filter((g) -> g.getIndex().equals(index)).collect(MoreCollectors.onlyElement());
     }
 
-    public Cart editCart(String name, Integer quantity) {
-        Cart foundCart = this.findCartItemByName(name);
+    public Cart editCart(Integer index, Integer quantity) {
+        Cart foundCart = this.findCartItemByIndex(index);
         if (foundCart != null) {
             foundCart.setQuantity(quantity);
         }
         return foundCart;
     }
 
-    public boolean deleteCartItem(String name) {
-        Cart foundCart = this.findCartItemByName(name);
+    public boolean deleteCartItem(int index) {
+        Cart foundCart = this.findCartItemByIndex(index);
         return foundCart != null && this.cartList.remove(foundCart);
     }
 }
