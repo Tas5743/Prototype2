@@ -10,14 +10,16 @@ public interface CartService {
 
     Cart addToCart(Cart Cart);
 
-    Cart findCartItemByName(String name);
+    Cart findCartItemByIndex(int index);
 
-    Cart editCart(String name, Integer quantity);
+    Cart editCart(int index, Integer quantity);
 
-    boolean deleteCartItem(String name);
+    boolean deleteCartItem(int index);
 
-    Double calculateTotal();
+    String calculateTotal();
 
     boolean clearCart();
+
+    Cart createCartItem(String itemName, Double itemPrice, int quantity);
 
 }

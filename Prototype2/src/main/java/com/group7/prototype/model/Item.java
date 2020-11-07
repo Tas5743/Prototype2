@@ -1,5 +1,7 @@
 package com.group7.prototype.model;
 
+import java.text.DecimalFormat;
+
 public class Item {
 
     //Instance data
@@ -8,6 +10,9 @@ public class Item {
     private Integer quantity;
     private Integer lQuantity;
     private Double price;
+    private String iInfo;
+    private String iDesc;
+    private String imageRef;
 
     public Item(Integer barcode, String name, Integer quantity, Integer lQuantity, Double price) {
         this.barcode = barcode;
@@ -15,6 +20,20 @@ public class Item {
         this.quantity = quantity;
         this.lQuantity = lQuantity;
         this.price = price;
+        this.iInfo = "";
+        this. iDesc = "";
+        this.imageRef = "none.jpg";
+    }
+
+    public Item(Integer barcode, String name, Integer quantity, Integer lQuantity, Double price, String pInfo, String pDesc, String imageRef) {
+        this.barcode = barcode;
+        this.name = name;
+        this.quantity = quantity;
+        this.lQuantity = lQuantity;
+        this.price = price;
+        this.iInfo = pInfo;
+        this.iDesc = pDesc;
+        this.imageRef = imageRef;
     }
 
     public Integer getBarcode() {
@@ -55,5 +74,32 @@ public class Item {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public String dPrice() {return new DecimalFormat("$#.###").format(this.price);
+    }
+
+    public String getiInfo() {
+        return iInfo;
+    }
+
+    public void setiInfo(String iInfo) {
+        this.iInfo = iInfo;
+    }
+
+    public String getiDesc() {
+        return iDesc;
+    }
+
+    public void setiDesc(String iDesc) {
+        this.iDesc = iDesc;
+    }
+
+    public String getImageRef() {
+        return imageRef;
+    }
+
+    public void setImageRef(String imageRef) {
+        this.imageRef = imageRef;
     }
 }

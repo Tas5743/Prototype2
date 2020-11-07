@@ -28,14 +28,14 @@
                 <td><p th:text="${item.name}"></p></td>
                 <td><p th:text="${item.quantity}"></p></td>
                 <td><p th:text="${item.lQuantity}"></p></td>
-                <td><p th:text="${item.price}"></p></td>
+                <td><p th:text="${item.dPrice()}"></p></td>
                 <td><a th:href="@{'/manager/items/edit/' + ${item.barcode}}">Edit</a></td>
                 <td><a th:href="@{'/manager/items/delete/' + ${item.barcode}}">Delete</a></td>
             </tr>
             </tbody>
     </table>
-    <button> <a href="/">Back to Index</a> </button>
-    <button> <a href="/manager/items/add/">Add Items</a> </button>
+    <button> <a th:href="@{'/'}">Back to Index</a> </button>
+    <button> <a th:href="@{'/manager/items/add'}">Add Items</a> </button>
 
 </section>
 </body>

@@ -22,11 +22,11 @@
         </thead>
         <tbody>
         <tr th:each="cart : ${cart}">
-            <td><p th:text="${cart.name}"></p></td>
-            <td><p th:text="${cart.quantity}"></p></td>
-            <td><p th:text="${cart.price}"></p></td>
-            <td><a th:href="@{'/customer/cart/edit/' + ${cart.name}}">Edit</a></td>
-            <td><a th:href="@{'/customer/cart/remove/' + ${cart.name}}">Delete</a></td>
+            <td><p th:text="${cart.getName()}"></p></td>
+            <td><p th:text="${cart.getQuantity()}"></p></td>
+            <td><p th:text="${cart.dPrice()}"></p></td>
+            <td><a th:href="@{'/customer/cart/edit/' + ${cart.getIndex()}}">Edit</a></td>
+            <td><a th:href="@{'/customer/cart/remove/' + ${cart.getIndex()}}">Delete</a></td>
         </tr>
         </tbody>
     </table>

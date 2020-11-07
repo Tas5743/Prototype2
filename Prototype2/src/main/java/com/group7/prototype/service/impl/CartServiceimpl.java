@@ -6,6 +6,7 @@ import com.group7.prototype.service.CartService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.text.DecimalFormat;
 import java.util.List;
 
 @Service
@@ -28,26 +29,26 @@ public class CartServiceimpl implements CartService {
 
 
     @Override
-    public Cart findCartItemByName(String name) {
-        return cartRepository.findCartItemByName(name);
+    public Cart findCartItemByIndex(int index) {
+        return cartRepository.findCartItemByIndex(index);
     }
 
     @Override
-    public Cart editCart(String name, Integer quantity) {
-        return cartRepository.editCart(name, quantity);
+    public Cart editCart(int index, Integer quantity) {
+        return cartRepository.editCart(index, quantity);
     }
 
     @Override
-    public boolean deleteCartItem(String name) {
-        return cartRepository.deleteCartItem(name);
+    public boolean deleteCartItem(int index) {
+        return cartRepository.deleteCartItem(index);
     }
 
     @Override
-    public Double calculateTotal() {
+    public String calculateTotal() {
         double total = 0.0;
         List<Cart> cartList = cartRepository.findAllCartItems();
         for (Cart cart : cartList) total = cart.getPrice() * cart.getQuantity();
-        return total;
+        return new DecimalFormat("$#.###").format(total);
     }
 
     @Override
@@ -57,5 +58,7 @@ public class CartServiceimpl implements CartService {
         cartRepository.findAllCartItems().clear();
         return true;
     }
+    @Override
+    public Cart createCartItem(String itemName, Double itemPrice, int quantity){return cartRepository.createCartItem(itemName, itemPrice, quantity);}
 
 }
