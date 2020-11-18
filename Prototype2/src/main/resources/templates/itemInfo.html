@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Item Info</title>
+    <link rel="stylesheet" th:href="@{/css/itemInfo.css}"/>
+</head>
+<body>
+<h3>Item Information</h3>
+<div id="item_info">
+
+
+<!--form method="post" th:action="@{'/customer/catalog/view'}"-->
+    <div class="item">
+    <tr th:each="item : ${item}">
+    <label>Name</label>
+    <p name="Name" th:text="${item.getName()}"></p>
+
+    <label>Information</label>
+    <p name="Name" th:text="${item.getiInfo()}"></p>
+
+    <label>Description</label>
+    <p name="Name" th:text="${item.getiDesc()}"></p>
+
+    <label>Image</label>
+    <p name="Image" th:text="${item.getImageRef()}"></p>
+
+    <label>Price</label>
+    <p name="Price" th:text="${item.getPrice()}"></p>
+    </tr>
+    </div>
+</div>
+
+<div id="address_bar">
+    <button> <a href="/customer/catalog">Back</a> </button>
+
+    <button> <a href="/customer/cart">Cart</a> </button>
+</div>
+</form>
+</body>
+</html>

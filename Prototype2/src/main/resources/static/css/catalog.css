@@ -22,6 +22,12 @@
   left:106px;
   top:200px;
 }
+.view_button{
+    position:relative
+    left:136px;
+    top:220px;
+
+}
 
 #CocaCola {
   height: auto;

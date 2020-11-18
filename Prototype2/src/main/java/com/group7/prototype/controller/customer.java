@@ -33,13 +33,14 @@ public class customer {
         return "cart";
     }
 
+
+
     @PostMapping("/customer/cart/edit/{index}")
         public String editQuantity(@PathVariable int index, Model model){
         Cart item = cartService.findCartItemByIndex(index);
         if(item!=null){
             model.addAttribute("Quantity",item.getQuantity());
         }
-        //TODO Write Method to edit quantity of a cart item, use the name to find the specific cart object in the cart - Rohan
         return "redirect:/customer/cart";
     }
 
@@ -65,6 +66,12 @@ public class customer {
         cartService.clearCart();
         return "redirect:/customer/cart";
     }
+    @GetMapping(value = "/customer/catalog/view")
+    //TODO add search by barcode once barcodes are assigned to items
+    public String viewItem( Model model){
+        List<Item> itemList = this.itemService.findAllItems();
+        return "itemInfo";
+    }
 
     @GetMapping("/customer/catalog")
     public String catalog(Model model){
@@ -83,12 +90,11 @@ public class customer {
         return "redirect:/customer/catalog";
     }
 
+
+
     @GetMapping("/customer/checkout")
     public String checkout(Model model){
         cartService.clearCart();
         return "checkout";
     }
-
-
-
 }
