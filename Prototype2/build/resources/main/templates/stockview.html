@@ -10,6 +10,25 @@
 <section>
     <h3>Stock</h3>
 
+    <form action="/manager/items/view/search" method="post">
+        <div class="row">
+            <div class="three columns">
+                <label>Item name: </label>
+            </div>
+            <div class="nine columns">
+                <input name="filter"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="three columns">
+                &nbsp;
+            </div>
+            <div class="nine columns">
+                <button>Search Items</button>
+            </div>
+        </div>
+    </form>
+
     <table th:unless="${items.size() eq 0}">
            <thead>
                <tr>
@@ -18,6 +37,7 @@
                    <th>Quantity</th>
                    <th>Lower Quantity</th>
                    <th>Price</th>
+                   <th>Image</th>
                    <th></th>
                    <th></th>
                </tr>
@@ -29,6 +49,8 @@
                 <td><p th:text="${item.quantity}"></p></td>
                 <td><p th:text="${item.lQuantity}"></p></td>
                 <td><p th:text="${item.dPrice()}"></p></td>
+
+                <td><p style="display: block" id="item" th:src="@{/product/none.jpg}"></p></td>
                 <td><a th:href="@{'/manager/items/edit/' + ${item.barcode}}">Edit</a></td>
                 <td><a th:href="@{'/manager/items/delete/' + ${item.barcode}}">Delete</a></td>
             </tr>

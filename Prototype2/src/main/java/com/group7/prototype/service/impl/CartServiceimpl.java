@@ -47,7 +47,7 @@ public class CartServiceimpl implements CartService {
     public String calculateTotal() {
         double total = 0.0;
         List<Cart> cartList = cartRepository.findAllCartItems();
-        for (Cart cart : cartList) total = cart.getPrice() * cart.getQuantity();
+        for (Cart cart : cartList) total += cart.getPrice() * cart.getQuantity();
         return new DecimalFormat("$#.###").format(total);
     }
 

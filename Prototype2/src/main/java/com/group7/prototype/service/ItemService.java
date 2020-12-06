@@ -16,6 +16,8 @@ public interface ItemService {
 
     boolean deleteItemByBarcode(int barcode);
 
+    List<Item> findAllFilteredItemsName(String filter);
+
 
 
 }

@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class ItemServiceImpl implements ItemService {
@@ -38,4 +39,13 @@ public class ItemServiceImpl implements ItemService {
     public boolean deleteItemByBarcode(int barcode) {
         return itemRepository.deleteItem(barcode);
     }
+
+    @Override
+    public List<Item> findAllFilteredItemsName(String filter) {
+        List<Item> items = itemRepository.findAllItems();
+        return items.stream()
+                .filter(g -> g.getName().toLowerCase().contains(filter.toLowerCase()))
+                .collect(Collectors.toList());
+    }
 }
+

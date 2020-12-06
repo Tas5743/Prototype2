@@ -23,12 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d234280d-e656-45c1-8161-1ebcb69064d4" name="Default Changelist" comment="More Tests">
-      <change afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/model/Transactions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/repository/TransactionsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/repository/impl/TransactionsRepositoryimpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/TransactionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/impl/TransactionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/products/none.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/transactionDetail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/transactions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
@@ -36,25 +32,26 @@
       <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/bootstrap/DataBaseLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/bootstrap/DataBaseLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/controller/customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/controller/customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/model/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/model/Cart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/model/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/model/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/repository/CartRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/repository/CartRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/repository/impl/CartRepositoryimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/repository/impl/CartRepositoryimpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/service/CartService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/service/CartService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/controller/ManagerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/controller/ManagerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/service/ItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/service/ItemService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/service/impl/CartServiceimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/service/impl/CartServiceimpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/service/impl/ItemServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/service/impl/ItemServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/stockview.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/stockview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/controller/customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/controller/customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/model/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/model/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/repository/CartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/repository/CartRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/repository/impl/CartRepositoryimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/repository/impl/CartRepositoryimpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/CartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/controller/ManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/controller/ManagerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/repository/TransactionsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/repository/TransactionsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/repository/impl/TransactionsRepositoryimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/repository/impl/TransactionsRepositoryimpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/ItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/TransactionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/impl/CartServiceimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/impl/CartServiceimpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/impl/ItemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/impl/TransactionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/service/impl/TransactionServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/stockview.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/stockview.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,13 +91,14 @@
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="iJustWantToSwitchToAnExistingBranch" />
+        <entry key="$PROJECT_DIR$" value="Test12" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -111,6 +109,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
@@ -152,15 +151,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.PrototypeApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -181,7 +178,9 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <configuration name="Prototype2 [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -200,7 +199,9 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <configuration name="Prototype2 [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -219,7 +220,9 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <configuration name="PrototypeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -232,8 +235,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Prototype2 [test]" />
-        <item itemvalue="Gradle.ManagerControllerTest.ABV" />
         <item itemvalue="Gradle.Prototype2 [dependencies]" />
+        <item itemvalue="Gradle.ManagerControllerTest.ABV" />
+        <item itemvalue="Gradle.Prototype2 [test]" />
+        <item itemvalue="Gradle.ManagerControllerTest.ABV" />
       </list>
     </recent_temporary>
   </component>
@@ -248,6 +253,15 @@
       <workItem from="1604304102225" duration="818000" />
       <workItem from="1604398845690" duration="1203000" />
       <workItem from="1604415825567" duration="21004000" />
+      <workItem from="1605731222602" duration="1487000" />
+      <workItem from="1605735048877" duration="618000" />
+      <workItem from="1605748024914" duration="864000" />
+      <workItem from="1606266249252" duration="7005000" />
+      <workItem from="1606458128705" duration="108000" />
+      <workItem from="1606458285645" duration="596000" />
+      <workItem from="1606528898528" duration="5968000" />
+      <workItem from="1606941428376" duration="1982000" />
+      <workItem from="1607163286479" duration="5743000" />
     </task>
     <task id="LOCAL-00001" summary="I thought I was working with Jenkins, where did all of this come from?">
       <created>1604394352952</created>
@@ -329,108 +343,6 @@
     <MESSAGE value="No Ants" />
     <option name="LAST_COMMIT_MESSAGE" value="No Ants" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="552" y="165" key="#Plugins" timestamp="1604442798142">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="552" y="165" key="#Plugins/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604442798142" />
-    <state x="440" y="99" key="#Project_Structure" timestamp="1604473575718">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="440" y="99" key="#Project_Structure/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604473575718" />
-    <state x="690" y="279" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1604695990507">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="690" y="279" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604695990507" />
-    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1604696029893">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604696029893" />
-    <state x="515" y="449" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1604473197435">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="515" y="449" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604473197435" />
-    <state x="345" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604687961372">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="345" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604687961372" />
-    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604417778836">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604417778836" />
-    <state x="740" y="266" key="FileChooserDialogImpl" timestamp="1604421065521">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="740" y="266" key="FileChooserDialogImpl/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604421065521" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604694840071">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604694840071" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604694840070">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604694840070" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604694840070">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604694840070" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604694840070">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604694840070" />
-    <state width="1877" height="282" key="GridCell.Tab.1.bottom" timestamp="1604694840071">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604694840071" />
-    <state width="1877" height="282" key="GridCell.Tab.1.center" timestamp="1604694840071">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.center/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604694840071" />
-    <state width="1877" height="282" key="GridCell.Tab.1.left" timestamp="1604694840071">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.left/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604694840071" />
-    <state width="1877" height="282" key="GridCell.Tab.1.right" timestamp="1604694840071">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.right/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604694840071" />
-    <state width="913" height="351" key="GridCell.Tab.2.bottom" timestamp="1603921818497">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="913" height="351" key="GridCell.Tab.2.bottom/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603921818497" />
-    <state width="913" height="351" key="GridCell.Tab.2.center" timestamp="1603921818497">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="913" height="351" key="GridCell.Tab.2.center/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603921818497" />
-    <state width="913" height="351" key="GridCell.Tab.2.left" timestamp="1603921818497">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="913" height="351" key="GridCell.Tab.2.left/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603921818497" />
-    <state width="913" height="351" key="GridCell.Tab.2.right" timestamp="1603921818497">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="913" height="351" key="GridCell.Tab.2.right/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603921818497" />
-    <state x="552" y="244" key="Vcs.Push.Dialog.v2" timestamp="1604428158354">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="552" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604428158354" />
-    <state x="1258" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603920775525">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="1258" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603920775525" />
-    <state x="722" y="274" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1604473037199">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="722" y="274" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604473037199" />
-    <state x="0" y="0" width="961" height="1050" key="dock-window-1" timestamp="1603921138360">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="0" y="0" width="961" height="1050" key="dock-window-1/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1603921138360" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1604445441505">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/-1920.0.1280.689@0.0.1920.1050" timestamp="1604445441505" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -443,6 +355,11 @@
           <url>file://$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/repository/impl/CartRepositoryimpl.java</url>
           <line>51</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/controller/ManagerController.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/controller/customer.java</url>
