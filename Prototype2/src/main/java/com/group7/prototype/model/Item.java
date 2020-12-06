@@ -21,7 +21,7 @@ public class Item {
         this.lQuantity = lQuantity;
         this.price = price;
         this.iInfo = "";
-        this. iDesc = "";
+        this.iDesc = "";
         this.imageRef = "none.jpg";
     }
 
