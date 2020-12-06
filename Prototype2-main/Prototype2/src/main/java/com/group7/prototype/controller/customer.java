@@ -92,9 +92,6 @@ public class customer {
         return "checkout";
     }
 
-    /* TODO Create PostMapping that takes the order and sends it to a repository of pending orders
-    @PostMapping("/customer/checkout/payment")
-    public
-*/
+
 
 }
