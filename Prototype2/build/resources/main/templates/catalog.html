@@ -8,30 +8,33 @@
 <body>
     <h3>Catalog</h3>
     <div id="catalog_items">
-<!--    TODO: Create a for loop to make these items off the database-->
-
-<!--        <span class="item_title">4oz Coca Cola</span>-->
-        <div class="item">
-            <img src="coke.png" alt="Coca Cola" class="item_image">
-            <form class="add_to_cart_button2" method="post" action="/customer/catalog/189">
-                <button type="submit">Add to Cart</button>
-            </form>
-        </div>
-<!--        <span class="item_title">Turkey Sandwich</span>-->
-        <div class="item">
-            <img src="sandwich.png" alt="Sandwich" class="item_image">
-            <form class="add_to_cart_button2" method="post" action="/customer/catalog/2109">
-                <button type="submit">Add to Cart</button>
-            </form>
-        </div>
-<!--        <span class="item_title">Manilla Wafers</span>-->
-        <div class="item">
-            <img src="wafers.png" alt="Wafers" class="item_image">
-            <form class="add_to_cart_button2" method="post" action="/customer/catalog/15">
-                <button type="submit">Add to Cart</button>
-            </form>
-        </div>
-
+        <table th:unless="${items.size() eq 0}">
+            <thead>
+            <tr>
+                <th>Item ID</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th></th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="item : ${items}">
+                <td><p th:text="${item.barcode}"></p></td>
+                <td><p th:text="${item.name}"></p></td>
+                <td><p th:text="${item.quantity}"></p></td>
+                <td><p th:text="${item.dPrice()}"></p></td>
+<!--                <td><img style="display: block" th:src="@{'/images/'+${item.imageRef}}"/></td>-->
+                <td><img style="display: block" th:src="${item.imageRef}"/></td>
+                <td>
+                    <form class="add_to_cart_button" method="post" th:action="@{'/customer/catalog/' + ${item.barcode}}">
+                        <button type="submit">Add to Cart</button>
+                    </form>
+                </td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 
     <div id="address_bar">
