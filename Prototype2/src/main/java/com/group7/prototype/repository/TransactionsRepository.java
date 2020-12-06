@@ -14,5 +14,7 @@ public interface TransactionsRepository {
 
     Transactions createTransaction(List<Cart> order);
 
+    Transactions findTransactionByIndex(int index);
+
 
 }

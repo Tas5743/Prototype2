@@ -1,8 +1,11 @@
 package com.group7.prototype.controller;
 
+import com.group7.prototype.model.Cart;
 import com.group7.prototype.model.Item;
+import com.group7.prototype.model.Transactions;
 import com.group7.prototype.service.ItemService;
 
+import com.group7.prototype.service.TransactionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,6 +15,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 
+import java.text.ParseException;
 import java.util.List;
 
 @Controller
@@ -19,6 +23,9 @@ public class ManagerController {
 
     @Autowired
     private ItemService itemService;
+
+    @Autowired
+    private TransactionService transactionService;
 
     @GetMapping("/manager/items/view")
     public String ABV(Model model){
@@ -95,10 +102,53 @@ public class ManagerController {
         return "redirect:/manager/items/view";
     }
 
+    @PostMapping("/manager/items/view/search")
+    public String search(Model model, @RequestParam("filter") String filter){
+        model.addAttribute("items",itemService.findAllFilteredItemsName(filter));
+        return "stockview";
+    }
+
     @GetMapping(value = "/manager/items/delete/{barcode}")
     public String deleteItem(@PathVariable int barcode){
         itemService.deleteItemByBarcode(barcode);
         return "redirect:/manager/items/view";
+    }
+
+    @GetMapping("/manager/transactions")
+    public String transactionsTable(Model model){
+        model.addAttribute("money", transactionService.total());
+        model.addAttribute("transcations",transactionService.findAllTransactions());
+        return "transactions";
+    }
+
+    @GetMapping("/manager/transactions/D")
+    public String transactionsTableLastDay(Model model) throws ParseException {
+        model.addAttribute("money", transactionService.total());
+        model.addAttribute("transcations",transactionService.findTransactionsday());
+        return "transactions";
+    }
+
+    @GetMapping("/manager/transactions/W")
+    public String transactionsTableLastWeek(Model model) throws ParseException {
+        model.addAttribute("money", transactionService.total());
+        model.addAttribute("transcations", transactionService.findTransactionsweek());
+        return "transactions";
+    }
+
+    @GetMapping("/manager/transactions/M")
+    public String transactionsTableLastMonth(Model model) throws ParseException {
+        model.addAttribute("money", transactionService.total());
+        model.addAttribute("transcations",transactionService.findTransactionsmonth());
+        return "transactions";
+    }
+
+
+    @GetMapping("/manager/transactions/{index}")
+    public String orderDetail(@PathVariable int index,Model model){
+        Transactions detail = transactionService.findTransactionByIndex(index);
+        List<Cart> cart = detail.getOrder();
+        model.addAttribute("detail",cart);
+        return "transactionDetail";
     }
 
 }
