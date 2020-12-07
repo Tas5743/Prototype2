@@ -1,0 +1,34 @@
+table, th, td{
+    border: 1px solid black;
+}
+
+.table1{
+    position: relative;
+    top: 100px;
+    left: 20px;
+}
+
+.table2{
+    position: relative;
+    top: 110px;
+    left: 20px;
+}
+
+.table3{
+    position: relative;
+    top: 120px;
+    left: 20px;
+}
+
+.table4{
+    position: relative;
+    top: -100px;
+    left: 600px;
+    width: 55%;
+}
+
+.button1{
+    position: relative;
+    top: 250px;
+    left: 50px;
+}
