@@ -17,7 +17,22 @@
   height: auto;
   width: auto;
 }
-
+#Pudding {
+  height: auto;
+  width: auto;
+}
+#TurkeySandwich {
+   height: auto;
+   width: auto;
+ }
+ #FriedChicken {
+    height: auto;
+    width: auto;
+ }
+ #ManillaWafers {
+     height: auto;
+     width: auto;
+   }
 #address_bar{
   padding-top:15px;
 }

@@ -22,7 +22,7 @@ public class Item {
         this.price = price;
         this.iInfo = "";
         this.iDesc = "";
-        this.imageRef = "none.jpg";
+        this.imageRef = "";
     }
 
     public Item(Integer barcode, String name, Integer quantity, Integer lQuantity, Double price, String pInfo, String pDesc, String imageRef) {

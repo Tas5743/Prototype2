@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Add Item</title>
+    <link rel="stylesheet" th:href="@{/css/newUser.css}"/>
+</head>
+<body>
+
+
+<section>
+
+    <h3>User Registration</h3>
+
+
+
+    <form method="post" action="/customer/newUsr">
+
+        <!div class="row">
+            <div class="three columns">
+                <label for="username">First Name</label><br>
+                <input type="text" id="name" name="name"><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="three columns">
+                <label>Last Name</label><br>
+                <input type="text" id="lastName" name="lastName"><br>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="three columns">
+
+                <label for="username">Email</label><br>
+                <input type="text" id="username" name="email"><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="three columns">
+                <label for="pass">Password:</label><br>
+                <input type="password" id="pass" name="password">
+                <!--label>Password</label-->
+            </div>
+            <!--div-- class="nine columns">
+                <input name ="password" />
+            </div-->
+        </div>
+
+
+
+        <div class="row">
+            <div class="three columns">&nbsp;</div>
+            <div class="nine columns">
+
+            </div>
+        </div>
+        <button class="btn btn-default" type="submit">Submit</button>
+
+    </form>
+</section>
+</body>
+</html>

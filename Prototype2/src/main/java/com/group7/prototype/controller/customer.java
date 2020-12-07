@@ -37,6 +37,8 @@ public class customer {
         return "cart";
     }
 
+
+
     @PostMapping("/customer/cart/edit/{index}")
         public String editQuantity(@PathVariable int index, Model model){
         Cart item = cartService.findCartItemByIndex(index);
@@ -69,6 +71,17 @@ public class customer {
         cartService.clearCart();
         return "redirect:/customer/cart";
     }
+    @GetMapping(value = "/customer/catalog/view")
+    public String viewItem( Model model){
+        return "itemInfo";
+    }
+    @PostMapping(value = "/customer/catalog/view/{barcode}")
+    public String viewItemForm(Model model, @PathVariable int barcode){
+        Item select = itemService.findItemByBarcode(barcode);
+        model.addAttribute("item",select);
+        return "itemInfo";
+    }
+
 
     @GetMapping("/customer/catalog")
     public String catalog(Model model){
@@ -79,6 +92,7 @@ public class customer {
 // Removed @RequestParam("itemName") String itemName, @RequestParam("itemPrice" String itemPrice)- Tyler
     @PostMapping("/customer/catalog/{barcode}")
     public String addItemToCart(@PathVariable int barcode) {
+        //@RequestParam("Quantity") int Quantity = 0;
         Item select = itemService.findItemByBarcode(barcode);
         int Quantity = 1;
         Cart item = cartService.createCartItem(select.getName(), select.getPrice(), Quantity);

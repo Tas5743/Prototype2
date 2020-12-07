@@ -2,25 +2,46 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Index</title>
+	<title>Convenience Store</title>
 	<link rel="stylesheet" th:href="@{/css/index.css}"/>
 </head>
 <body>
 
 <section>
-	<h1>Index</h1>
+	<h1>Welcome to Convenience Store</h1>
 	<h4>----------------------------------------------</h4>
 	<h3>Login</h3>
-	<form>
-		<label for="username">Username:</label><br>
+	<form action="/login" method = "post">
+		<div class="row">
+			<div class="three columns">
+
+				<label for="username">Email</label><br>
+				<input type="text" id="username" name="username"><br>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="three columns">
+				<label for="pass">Password:</label><br>
+				<input type="password" id="pass" name="password">
+				<!--label>Password</label-->
+			</div>
+			<!--div-- class="nine columns">
+                <input name ="password" />
+            </div-->
+		</div>
+		<!--label>Username</label><br>
 		<input type="text" id="username" name="username"><br>
-		<label for="pass">Password:</label><br>
-		<input type="password" id="pass" name="password">
-		<input type="submit" value="Login">
+		<label>Password</label><br>
+		<input type="password" id="password" name="password"-->
+		<button class="btn btn-default" type="submit">Login</button>
 	</form>
 	<div id="buttons">
+
 		<button> <a href="/manager/items/view">Stock View</a> </button>
-		<button> <a href="/customer/catalog">Catalog</a> </button>
+
+		<button> <a href="/customer/newUsr">Create Account</a> </button>
+
 	</div>
 
 </section>
