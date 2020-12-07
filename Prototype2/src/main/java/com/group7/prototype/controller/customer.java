@@ -4,6 +4,7 @@ import com.group7.prototype.model.Cart;
 import com.group7.prototype.model.Item;
 import com.group7.prototype.service.CartService;
 import com.group7.prototype.service.ItemService;
+import com.group7.prototype.service.TransactionService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -24,6 +25,9 @@ public class customer {
 
     @Autowired
     private CartService cartService;
+
+    @Autowired
+    private TransactionService transactionService;
 
     @GetMapping("/customer/cart")
     public String cart(Model model){
@@ -75,7 +79,6 @@ public class customer {
 // Removed @RequestParam("itemName") String itemName, @RequestParam("itemPrice" String itemPrice)- Tyler
     @PostMapping("/customer/catalog/{barcode}")
     public String addItemToCart(@PathVariable int barcode) {
-        //@RequestParam("Quantity") int Quantity = 0;
         Item select = itemService.findItemByBarcode(barcode);
         int Quantity = 1;
         Cart item = cartService.createCartItem(select.getName(), select.getPrice(), Quantity);
@@ -84,9 +87,16 @@ public class customer {
     }
 
     @GetMapping("/customer/checkout")
-    public String checkout(Model model){
-        cartService.clearCart();
+    public String checkout(){
+
         return "checkout";
+    }
+
+    @GetMapping("/customer/checkout/payment")
+    public String pay(){
+        transactionService.addTransaction(transactionService.createTransaction(cartService.findAllCartItems()));
+        cartService.clearCart();
+        return "redirect:/customer/catalog";
     }
 
 

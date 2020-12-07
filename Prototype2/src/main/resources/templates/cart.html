@@ -3,36 +3,88 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Cart</title>
-    <link rel="stylesheet" th:href="@{/css/cart.css}"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 
+<style>
+    th {
+        border: 1px solid rgb(190, 190, 190);
+        padding: 10px;
+        text-align: center;
+    }
+
+    table {
+        border-collapse: collapse;
+        border: 2px solid rgb(200, 200, 200);
+        letter-spacing: 1px;
+    }
+
+    .navbar {
+        margin-bottom: 50px;
+        border-radius: 0;
+    }
+
+    .button {
+        border: none;
+        color: white;
+        padding: 15px 40px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .buttonG {background-color: #4CAF50;}
+    .buttonB {background-color: #66AACC;}
+
+    .header {
+        margin-bottom: 0;
+    }
+</style>
+
 <section>
-    <h3>Cart</h3>
-<!--    <table th:unless="${cart.size() eq 0}">-->
+    <div class="header">
+        <div class="container text-center">
+            <h1>Cart</h1>
+        </div>
+    </div>
+    <!--    <table th:unless="${cart.size() eq 0}">-->
     <table>
         <thead>
         <tr>
-            <th>Name</th>
-            <th>Quantity</th>
-            <th>Price</th>
+            <th scope="col">Name</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
             <th></th>
             <th></th>
         </tr>
         </thead>
+
+
         <tbody>
         <tr th:each="cart : ${cart}">
             <td><p th:text="${cart.getName()}"></p></td>
             <td><p th:text="${cart.getQuantity()}"></p></td>
             <td><p th:text="${cart.dPrice()}"></p></td>
-            <td><a th:href="@{'/customer/cart/edit/' + ${cart.getIndex()}}">Edit</a></td>
-            <td><a th:href="@{'/customer/cart/remove/' + ${cart.getIndex()}}">Delete</a></td>
+            <td><a th:href="@{'/customer/cart/edit/' + ${cart.getIndex()}}"><button>Edit</button></a></td>
+            <td><a th:href="@{'/customer/cart/remove/' + ${cart.getIndex()}}"><button>Delete</button></a></td>
         </tr>
         </tbody>
     </table>
-    <button> <a href="/customer/catalog">Back</a> </button>
-    <button> <a th:href="@{'/customer/cart/clear/'}">Clear Cart</a></button>
-    <button> <a href="/customer/checkout">Checkout</a> </button>
+
+    <br>
+    <button class ="button buttonB"> <a href="/customer/catalog">Back</a> </button>
+    <button class ="button buttonB"> <a th:href="@{'/customer/cart/clear/'}">Clear Cart</a></button><br>
+    <br>
+    <br>
+    <button class="button buttonG"> <a href="/customer/checkout">Checkout</a> </button>
+
+
 </section>
 </body>
 </html>
