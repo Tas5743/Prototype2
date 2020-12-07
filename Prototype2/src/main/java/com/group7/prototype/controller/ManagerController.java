@@ -67,6 +67,7 @@ public class ManagerController {
         Item item = new Item(itemBarcode,itemName,itemQuantity,itemLQuantity,DoubleitemPrice);
         item = itemService.addItem(item);
         model.addAttribute("success",Boolean.TRUE);
+
         return "redirect:/manager/items/view";
     }
 

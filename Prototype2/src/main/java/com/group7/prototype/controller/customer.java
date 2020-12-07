@@ -47,7 +47,6 @@ public class customer {
     @GetMapping("/customer/cart/remove/{index}")
         public String removeCartItem(@PathVariable int index){
         cartService.deleteCartItem(index);
-        //TODO Write Method to remove item from cart - Rohan
         return "redirect:/customer/cart";
     }
     // TODO this needs its own HTML page - Jacob
@@ -67,11 +66,16 @@ public class customer {
         return "redirect:/customer/cart";
     }
     @GetMapping(value = "/customer/catalog/view")
-    //TODO add search by barcode once barcodes are assigned to items
     public String viewItem( Model model){
-        List<Item> itemList = this.itemService.findAllItems();
         return "itemInfo";
     }
+    @PostMapping(value = "/customer/catalog/view/{barcode}")
+    public String viewItemForm(Model model, @PathVariable int barcode){
+        Item select = itemService.findItemByBarcode(barcode);
+        model.addAttribute("item",select);
+        return "itemInfo";
+    }
+
 
     @GetMapping("/customer/catalog")
     public String catalog(Model model){
@@ -89,7 +93,6 @@ public class customer {
         cartService.addToCart(item);
         return "redirect:/customer/catalog";
     }
-
 
 
     @GetMapping("/customer/checkout")

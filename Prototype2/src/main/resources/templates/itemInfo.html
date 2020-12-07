@@ -7,28 +7,20 @@
 </head>
 <body>
 <h3>Item Information</h3>
-<div id="item_info">
+<!--form method="post" action="/customer/catalog/view"-->
 
-
-<!--form method="post" th:action="@{'/customer/catalog/view'}"-->
-    <div class="item">
-    <tr th:each="item : ${item}">
-    <label>Name</label>
-    <p name="Name" th:text="${item.getName()}"></p>
-
-    <label>Information</label>
-    <p name="Name" th:text="${item.getiInfo()}"></p>
-
-    <label>Description</label>
-    <p name="Name" th:text="${item.getiDesc()}"></p>
-
-    <label>Image</label>
-    <p name="Image" th:text="${item.getImageRef()}"></p>
+<div id="itemInfo">
 
     <label>Price</label>
-    <p name="Price" th:text="${item.getPrice()}"></p>
-    </tr>
-    </div>
+    <p th:text="${item.getPrice()}"></p>
+    <label>Name</label>
+    <p th:text="${item.getName()}"></p>
+    <label>Image</label>
+    <p><img style="display: block" th:src="${item.imageRef}"/></p>
+
+    <label>Info</label>
+    <p th:text="${item.getiInfo()}"></p>
+
 </div>
 
 <div id="address_bar">
@@ -36,6 +28,7 @@
 
     <button> <a href="/customer/cart">Cart</a> </button>
 </div>
-</form>
+
+
 </body>
 </html>
