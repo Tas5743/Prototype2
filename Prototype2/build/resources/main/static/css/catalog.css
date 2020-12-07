@@ -12,7 +12,16 @@
   background-color: rgba(50,50,50,1);
   color: rgba(20,20,20,1);
 }
-
+.add_to_cart_button{
+  position: relative;
+  left:20px;
+  top:220px;
+}
+.add_to_cart_button2{
+  position: relative;
+  left:106px;
+  top:200px;
+}
 #CocaCola {
   height: auto;
   width: auto;
@@ -36,3 +45,18 @@
 #address_bar{
   padding-top:15px;
 }
+
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+.header {
+  margin-bottom: 0;
+}
+
+.navbar {
+  margin-bottom: 50px;
+  border-radius: 0;
+}
+
