@@ -80,7 +80,7 @@
             <th scope="col">Quantity</th>
             <th scope="col">Price</th>
             <th></th>
-            <th></th>
+
         </tr>
         </thead>
 
@@ -90,7 +90,7 @@
             <td><p th:text="${cart.getName()}"></p></td>
             <td><p th:text="${cart.getQuantity()}"></p></td>
             <td><p th:text="${cart.dPrice()}"></p></td>
-            <td><a th:href="@{'/customer/cart/edit/' + ${cart.getIndex()}}"><button>Edit</button></a></td>
+            <!-- <td><a th:href="@{'/customer/cart/edit/' + ${cart.getIndex()}}"><button>Edit</button></a></td>-->
             <td><a th:href="@{'/customer/cart/remove/' + ${cart.getIndex()}}"><button>Delete</button></a></td>
         </tr>
         </tbody>
