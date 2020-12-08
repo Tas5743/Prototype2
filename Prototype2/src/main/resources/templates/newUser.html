@@ -3,33 +3,63 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Add Item</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" th:href="@{/css/newUser.css}"/>
 </head>
 <body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
 
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="/customer/catalog">Catalog</a></li>
+                <<li><a href="/customer/checkout">Checkout</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/customer/cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
 <section>
 
-    <h3>User Registration</h3>
-
-
-
+    <div class="header">
+        <div class="container text-center">
+            <h1>User Registration</h1>
+        </div>
+    </div>
+    <br>
+    <div align="center">
     <form method="post" action="/customer/newUsr">
 
-        <!div class="row">
+        <div class="row">
             <div class="three columns">
                 <label for="username">First Name</label><br>
                 <input type="text" id="name" name="name"><br>
             </div>
         </div>
+        <br>
 
         <div class="row">
             <div class="three columns">
                 <label>Last Name</label><br>
                 <input type="text" id="lastName" name="lastName"><br>
-
             </div>
         </div>
+        <br>
 
         <div class="row">
             <div class="three columns">
@@ -38,10 +68,11 @@
                 <input type="text" id="username" name="email"><br>
             </div>
         </div>
+        <br>
 
         <div class="row">
             <div class="three columns">
-                <label for="pass">Password:</label><br>
+                <label for="pass">Password</label><br>
                 <input type="password" id="pass" name="password">
                 <!--label>Password</label-->
             </div>
@@ -58,9 +89,11 @@
 
             </div>
         </div>
-        <button class="btn btn-default" type="submit">Submit</button>
+        <br>
+        <button type="submit" class="btn btn-success btn-lg" type="submit">Create Account</button>
 
     </form>
+    </div>
 </section>
 </body>
 </html>
