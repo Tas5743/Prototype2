@@ -11,7 +11,7 @@
 </head>
 
 <style>
-    th {
+    th, td {
         border: 1px solid rgb(190, 190, 190);
         padding: 10px;
         text-align: center;
@@ -91,7 +91,7 @@
             <td><p th:text="${cart.getQuantity()}"></p></td>
             <td><p th:text="${cart.dPrice()}"></p></td>
             <!-- <td><a th:href="@{'/customer/cart/edit/' + ${cart.getIndex()}}"><button>Edit</button></a></td>-->
-            <td><a th:href="@{'/customer/cart/remove/' + ${cart.getIndex()}}"><button>Delete</button></a></td>
+            <td><a th:href="@{'/customer/cart/remove/' + ${cart.getIndex()}}"><button type="submit" class="btn btn-success">Delete</button></a></td>
         </tr>
         </tbody>
     </table>
