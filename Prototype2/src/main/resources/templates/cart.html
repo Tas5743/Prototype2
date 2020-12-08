@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
 </head>
-<body>
 
 <style>
     th {
@@ -30,30 +28,51 @@
         border-radius: 0;
     }
 
-    .button {
-        border: none;
-        color: white;
-        padding: 15px 40px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        cursor: pointer;
-    }
-    .buttonG {background-color: #4CAF50;}
-    .buttonB {background-color: #66AACC;}
-
     .header {
         margin-bottom: 0;
     }
+
 </style>
 
-<section>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/customer/catalog">Catalog</a></li>
+                <li><a href="/customer/checkout">Checkout</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class ="active"><a href="/customer/cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
     <div class="header">
         <div class="container text-center">
             <h1>Cart</h1>
         </div>
     </div>
+<section>
+    <br>
+    <div align="center">
+    <button type="button" class="btn btn-info btn-lg"> <a href="/customer/catalog">Back to Catalog</a> </button>
+    <button type="button" class="btn btn-info btn-lg"> <a th:href="@{'/customer/cart/clear/'}">Clear Cart</a></button><br>
+    <br>
     <!--    <table th:unless="${cart.size() eq 0}">-->
+
     <table>
         <thead>
         <tr>
@@ -77,14 +96,12 @@
         </tbody>
     </table>
 
-    <br>
-    <button class ="button buttonB"> <a href="/customer/catalog">Back</a> </button>
-    <button class ="button buttonB"> <a th:href="@{'/customer/cart/clear/'}">Clear Cart</a></button><br>
-    <br>
-    <br>
-    <button class="button buttonG"> <a href="/customer/checkout">Checkout</a> </button>
 
 
+    <br>
+        <button type="submit" class="btn btn-success btn-lg"> <a href="/customer/checkout">Checkout</a> </button>
+
+    </div>
 </section>
 </body>
 </html>

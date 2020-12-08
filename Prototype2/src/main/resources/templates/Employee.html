@@ -1,9 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Employee</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel = "stylesheet" type = "text/css" href = "Employee.css">
 </head>
 <body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/customer/catalog">Catalog</a></li>
+                <li><a href="/customer/checkout">Checkout</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/customer/cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header>
+    <div class="header">
+        <div class="container text-center">
+            <h1>Employee Information</h1>
+        </div>
+    </div>
+</header>
+
 <table class = "table1">
     <tr>
         <th>Employee Name</th>
@@ -77,7 +115,7 @@
         <td>10</td>
         <td>11</td>
         <td>12</td>
-        </td>
+
     </tr>
         <td>13</td>
         <td>14</td>
@@ -88,7 +126,9 @@
         <td>19</td>
         </td>
 </table>
-
-<button class = "button1"> <a href = "/">Home</a></button>
+    <br>
+<div align="center">
+<button type="button" class="btn btn-info btn-lg"> <a href = "/">Back</a></button>
+</div>
 </body>
 </html>

@@ -10,6 +10,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <style>
+    th {
+        border: 1px solid rgb(190, 190, 190);
+        padding: 10px;
+        text-align: center;
+    }
+
+    table {
+        border-collapse: collapse;
+        border: 2px solid rgb(200, 200, 200);
+        letter-spacing: 1px;
+    }
+
+    .navbar {
+        margin-bottom: 50px;
+        border-radius: 0;
+    }
+
     .header {
         margin-bottom: 0;
     }
@@ -17,6 +34,29 @@
 </style>
 </head>
 <body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/customer/catalog">Catalog</a></li>
+                <li><a href="/customer/checkout">Checkout</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/customer/cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 
 <section>
     <div class="header">
@@ -24,16 +64,19 @@
             <h1>Stock</h1>
         </div>
     </div>
+    <div align="center">
+
 
     <form action="/manager/items/view/search" method="post">
         <div class="row">
             <div class="three columns">
-                <label>Item name: </label>
+                <label>Item Name</label>
             </div>
             <div class="nine columns">
                 <input name="filter"/>
             </div>
         </div>
+
         <div class="row">
             <div class="three columns">
                 &nbsp;
@@ -42,8 +85,9 @@
                 <button>Search Items</button>
             </div>
         </div>
+        <br>
     </form>
-
+    <br>
     <table th:unless="${items.size() eq 0}">
            <thead>
                <tr>
@@ -56,6 +100,7 @@
                    <th></th>
                </tr>
            </thead>
+
             <tbody>
             <tr th:each="item : ${items}">
                 <td><p th:text ="${item.barcode}"></p></td>
@@ -63,14 +108,16 @@
                 <td><p th:text="${item.quantity}"></p></td>
                 <td><p th:text="${item.lQuantity}"></p></td>
                 <td><p th:text="${item.dPrice()}"></p></td>
-                <td><a th:href="@{'/manager/items/edit/' + ${item.barcode}}">Edit</a></td>
-                <td><a th:href="@{'/manager/items/delete/' + ${item.barcode}}">Delete</a></td>
+                <td><a th:href="@{'/manager/items/edit/' + ${item.barcode}}"><button>Edit</button></a></td>
+                <td><a th:href="@{'/manager/items/delete/' + ${item.barcode}}"><button>Delete</button></a></td>
             </tr>
             </tbody>
     </table>
-    <button> <a th:href="@{'/'}">Back to Index</a> </button>
-    <button> <a th:href="@{'/manager/items/add'}">Add Items</a> </button>
+        <br>
+        <button type="button" class="btn btn-info btn-lg"> <a th:href="@{'/'}">Back to Index</a> </button>
+        <button type="button" class="btn btn-info btn-lg"> <a th:href="@{'/manager/items/add'}">Add Items</a> </button>
 
+    </div>
 </section>
 </body>
 </html>
