@@ -1,51 +1,64 @@
 package com.group7.prototype.repository.impl;
 
+import com.group7.prototype.jpa.jpaItemRepo;
 import com.group7.prototype.model.Item;
 import com.group7.prototype.repository.ItemRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import com.google.common.collect.MoreCollectors;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public class ItemRepositoryImpl implements ItemRepository {
 
-    private  List<Item> itemList = new ArrayList<>();
+    @Autowired
+    private jpaItemRepo jpaItemRepo;
 
     @Override
     public List<Item> findAllItems() {
-        return itemList;
+        return (List <Item>) jpaItemRepo.findAll();
     }
 
     @Override
     public Item addItem(Item item) {
-        itemList.add(item);
-        return item;
+        return jpaItemRepo.save(item);
     }
 
     @Override
     public Item findItemByBarcode(int barcode) {
-        return itemList.stream().filter(g -> g.getBarcode() == barcode).collect(MoreCollectors.onlyElement());
+        Optional<Item> itemOptional = jpaItemRepo.findById(barcode);
+        if (itemOptional.isPresent()){
+            return itemOptional.get();
+        }
+        return null;
     }
 
     @Override
-    public Item editItem(Integer barcode, String name, Integer quantity, Integer lQuantity, String price) {
+    public Item editItem(Integer barcode, String name, Integer quantity, Integer lQuantity, String price, String iInfo, String iDesc, String imageRef){
         Item foundItem = findItemByBarcode(barcode);
         if (foundItem != null){
             foundItem.setName(name);
             foundItem.setQuantity(quantity);
             foundItem.setlQuantity(lQuantity);
             foundItem.setPrice(Double.parseDouble(price));
+            foundItem.setiInfo(iInfo);
+            foundItem.setiDesc(iDesc);
+            foundItem.setName(imageRef);
         }
-        return foundItem;
+
+        if (foundItem == null) return null;
+        return jpaItemRepo.save(foundItem);
     }
 
     @Override
     public boolean deleteItem(int barcode) {
         Item foundItem = findItemByBarcode(barcode);
         if (foundItem != null) {
-            return itemList.remove(foundItem);
+            jpaItemRepo.deleteById(foundItem.getBarcode());
+            return true;
         }
         return false;
     }

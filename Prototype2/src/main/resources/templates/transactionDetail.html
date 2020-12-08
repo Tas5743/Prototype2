@@ -17,10 +17,10 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:each="cart : ${detail}">
-        <td><p th:text="${cart.getName()}"></p></td>
-        <td><p th:text="${cart.getQuantity()}"></p></td>
-        <td><p th:text="${cart.dPrice()}"></p></td>
+    <tr th:each="sale : ${detail}">
+        <td><p th:text="${sale.getName()}"></p></td>
+        <td><p th:text="${sale.getQuantity()}"></p></td>
+        <td><p th:text="${sale.dPrice()}"></p></td>
     </tr>
     </tbody>
 </table>

@@ -1,16 +1,23 @@
 package com.group7.prototype.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.text.DecimalFormat;
 
+@Entity
 public class Item {
 
     //Instance data
+    @Id
     private Integer barcode;
     private String name;
     private Integer quantity;
     private Integer lQuantity;
     private Double price;
+    @Column(length = 10000)
     private String iInfo;
+    @Column(length = 10000)
     private String iDesc;
     private String imageRef;
 
@@ -34,6 +41,10 @@ public class Item {
         this.iInfo = pInfo;
         this.iDesc = pDesc;
         this.imageRef = imageRef;
+    }
+
+    public Item() {
+
     }
 
     public Integer getBarcode() {

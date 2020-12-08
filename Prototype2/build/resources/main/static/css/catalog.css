@@ -1,4 +1,7 @@
 #catalog_items{
+margin-left:10px;
+}
+#catalog_items{
   width:100%;
 }
 .item{
@@ -12,36 +15,15 @@
   background-color: rgba(50,50,50,1);
   color: rgba(20,20,20,1);
 }
+
+.itemImage{
+    width: 200px;
+    height: 200px;
+}
 .add_to_cart_button{
-  position: relative;
-  left:20px;
-  top:220px;
+
 }
-.add_to_cart_button2{
-  position: relative;
-  left:106px;
-  top:200px;
-}
-#CocaCola {
-  height: auto;
-  width: auto;
-}
-#Pudding {
-  height: auto;
-  width: auto;
-}
-#TurkeySandwich {
-   height: auto;
-   width: auto;
- }
- #FriedChicken {
-    height: auto;
-    width: auto;
- }
- #ManillaWafers {
-     height: auto;
-     width: auto;
-   }
+
 #address_bar{
   padding-top:15px;
 }

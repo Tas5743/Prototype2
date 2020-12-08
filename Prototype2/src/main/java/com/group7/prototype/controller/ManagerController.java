@@ -2,6 +2,7 @@ package com.group7.prototype.controller;
 
 import com.group7.prototype.model.Cart;
 import com.group7.prototype.model.Item;
+import com.group7.prototype.model.Sales;
 import com.group7.prototype.model.Transactions;
 import com.group7.prototype.service.ItemService;
 
@@ -42,7 +43,8 @@ public class ManagerController {
     @PostMapping("/manager/items/add")
     public String addItemFormSubmit(Model model, @RequestParam("itemBarcode") int itemBarcode
             , @RequestParam("itemName") String itemName, @RequestParam("itemQuantity") int itemQuantity
-            , @RequestParam("itemLQuantity") int itemLQuantity, @RequestParam("itemPrice") String itemPrice){
+            , @RequestParam("itemLQuantity") int itemLQuantity, @RequestParam("itemPrice") String itemPrice, @RequestParam("iInfo") String iInfo, @RequestParam("iDesc") String iDesc,
+                                    @RequestParam("imageRef") String imageRef){
 
         Double DoubleitemPrice = 0.0;
 
@@ -71,7 +73,11 @@ public class ManagerController {
                 return "redirect:/manager/items/view";
             }
         }
-        Item item = new Item(itemBarcode,itemName,itemQuantity,itemLQuantity,DoubleitemPrice);
+        Item item = null;
+        if (!iInfo.isEmpty() || !iDesc.isEmpty() ||!imageRef.isEmpty())
+            {item = new Item(itemBarcode,itemName,itemQuantity,itemLQuantity,DoubleitemPrice, iInfo, iDesc, imageRef);}
+        else {item = new Item(itemBarcode,itemName,itemQuantity,itemLQuantity,DoubleitemPrice);}
+
         item = itemService.addItem(item);
         model.addAttribute("success",Boolean.TRUE);
 
@@ -95,11 +101,12 @@ public class ManagerController {
     }
 
     @PostMapping(value  = "/manager/items/edit")
-    public String itemEdit(@RequestParam("Barcode") int Barcode,
-                           @RequestParam("Name") String Name, @RequestParam("Quantity") int Quantity,
-                           @RequestParam("lQuantity") int lQuantity, @RequestParam("Price") String Price){
+    public String itemEdit(Model model, @RequestParam("itemBarcode") int itemBarcode
+            , @RequestParam("itemName") String itemName, @RequestParam("itemQuantity") int itemQuantity
+            , @RequestParam("itemLQuantity") int itemLQuantity, @RequestParam("itemPrice") String itemPrice, @RequestParam("iInfo") String iInfo, @RequestParam("iDesc") String iDesc,
+                           @RequestParam("imageRef") String imageRef){
 
-        itemService.editItem(Barcode,Name,Quantity,lQuantity,Price);
+        itemService.editItem(itemBarcode,itemName,itemQuantity,itemLQuantity,itemPrice,iDesc,iInfo,imageRef);
         return "redirect:/manager/items/view";
     }
 
@@ -147,8 +154,8 @@ public class ManagerController {
     @GetMapping("/manager/transactions/{index}")
     public String orderDetail(@PathVariable int index,Model model){
         Transactions detail = transactionService.findTransactionByIndex(index);
-        List<Cart> cart = detail.getOrder();
-        model.addAttribute("detail",cart);
+        List<Sales> sales = detail.getSales();
+        model.addAttribute("detail",sales);
         return "transactionDetail";
     }
 

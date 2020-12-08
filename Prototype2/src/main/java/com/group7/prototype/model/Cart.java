@@ -1,21 +1,25 @@
 package com.group7.prototype.model;
-
 import java.text.DecimalFormat;
 
 public class Cart {
 
     //
+    private Integer index;
     private String name;
     private Double price;
     private Integer quantity;
-    private Integer index;
 
 
-    public Cart(Integer index,String name, Double price, Integer quantity) {
+
+    public Cart(Integer index, String name, Double price, Integer quantity) {
         this.index = index;
         this.name = name;
         this.price = price;
         this.quantity = quantity;
+    }
+
+    public Cart() {
+
     }
 
     public String getName() {
@@ -50,7 +54,8 @@ public class Cart {
         this.index = index;
     }
 
-    public String dPrice(){return new DecimalFormat("$#.###").format(this.price*this.quantity);}
-
+    public String dPrice() {
+        return new DecimalFormat("$#.###").format(this.price * this.quantity);
+    }
 
 }

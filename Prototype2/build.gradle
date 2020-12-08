@@ -6,7 +6,7 @@ plugins {
 
 group = 'com.Group7'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '1.8'
+
 
 repositories {
     mavenCentral()
@@ -15,11 +15,20 @@ repositories {
 dependencies {
     implementation('org.springframework.boot:spring-boot-starter-thymeleaf')
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
     compile group: 'com.google.guava', name: 'guava', version: '27.0-jre'
+    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+    compile group: 'com.h2database', name: 'h2', version: '1.4.197'
+
+
+
 }
+
+
+
 
 test {
     useJUnitPlatform()

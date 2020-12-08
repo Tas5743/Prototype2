@@ -21,7 +21,7 @@
     <tbody>
     <tr th:each="transaction : ${transcations}">
         <td><p th:text ="${transaction.getDate()}"></p></td>
-        <td><p th:text ="${transaction.getTotal()}"></p></td>
+        <td><p th:text ="${transaction.dPrice()}"></p></td>
         <td><a th:href="@{'/manager/transactions/' + ${transaction.getIndex()}}">View</a></td>
     </tr>
     </tbody>
