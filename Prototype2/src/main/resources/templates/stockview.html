@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <style>
-    th {
+    th, td {
         border: 1px solid rgb(190, 190, 190);
         padding: 10px;
         text-align: center;
@@ -46,9 +46,9 @@
 
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="/">Home</a></li>
+                <li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
                 <li><a href="/customer/catalog">Catalog</a></li>
-                <li><a href="/customer/checkout">Checkout</a></li>
+                <li class="active"><a href="/manager/items/view">Stock View</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/customer/cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
@@ -82,7 +82,7 @@
                 &nbsp;
             </div>
             <div class="nine columns">
-                <button>Search Items</button>
+                <button type="submit" class="btn btn-success">Search Items</button>
             </div>
         </div>
         <br>
@@ -108,8 +108,8 @@
                 <td><p th:text="${item.quantity}"></p></td>
                 <td><p th:text="${item.lQuantity}"></p></td>
                 <td><p th:text="${item.dPrice()}"></p></td>
-                <td><a th:href="@{'/manager/items/edit/' + ${item.barcode}}"><button>Edit</button></a></td>
-                <td><a th:href="@{'/manager/items/delete/' + ${item.barcode}}"><button>Delete</button></a></td>
+                <td><a th:href="@{'/manager/items/edit/' + ${item.barcode}}"><button type="submit" class="btn btn-success">Edit</button></a></td>
+                <td><a th:href="@{'/manager/items/delete/' + ${item.barcode}}"><button type="submit" class="btn btn-success">Delete</button></a></td>
             </tr>
             </tbody>
     </table>

@@ -23,18 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d234280d-e656-45c1-8161-1ebcb69064d4" name="Default Changelist" comment="More Tests">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/static/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/Employee.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/Employee.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/addItem.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/addItem.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/static/css/catalog.css" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/static/css/catalog.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/checkout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/editItem.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/editItem.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/itemInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/itemInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/newUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/newUser.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/stockview.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/stockview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/transactionDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/transactionDetail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/transactions.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/transactions.html" afterDir="false" />
