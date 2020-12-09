@@ -1,9 +1,8 @@
-h1 {
-  color: black;
-}
-h4{
-  color: black;
-}
+
 #buttons{
   margin-top:10px;
 }
+.header {
+        margin-bottom: 0;
+    }
+

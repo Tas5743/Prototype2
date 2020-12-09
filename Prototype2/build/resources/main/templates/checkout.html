@@ -23,9 +23,9 @@
 
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
+                <li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
                 <li><a href="/customer/catalog">Catalog</a></li>
-                <li class="active"><a href="/customer/checkout">Checkout</a></li>
+                <li><a href="/manager/items/view">Stock View</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/customer/cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
@@ -43,6 +43,7 @@
             <h1>Checkout</h1>
         </div>
     </div>
+</header>
 
     <div align="center">
         <h2>Payment Method</h2>
@@ -87,10 +88,10 @@
     </div>
     <br>
     <div align="center">
-        <button type="button" class="btn btn-info btn-lg"><a th:href="@{'/customer/checkout/payment'}">Place Order</a></button>
+        <button type="button" class="btn btn-success btn-lg"><a th:href="@{'/customer/checkout/payment'}">Place Order</a></button>
     </div>
     <br>
 
-</header>
+
 </body>
 </html>

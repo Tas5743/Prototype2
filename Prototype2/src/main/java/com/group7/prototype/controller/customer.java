@@ -83,19 +83,27 @@ public class customer {
     }
 
 
+
     @GetMapping("/customer/catalog")
     public String catalog(Model model){
         List<Item> itemList = this.itemService.findAllItems();
         model.addAttribute("items",itemList);
         return "catalog";
     }
+
 // Removed @RequestParam("itemName") String itemName, @RequestParam("itemPrice" String itemPrice)- Tyler
     @PostMapping("/customer/catalog/{barcode}")
-    public String addItemToCart(@PathVariable int barcode) {
+    public String addItemToCart(Model model,@RequestParam("quant") String quant,@PathVariable int barcode) {
         //@RequestParam("Quantity") int Quantity = 0;
         Item select = itemService.findItemByBarcode(barcode);
-        int Quantity = 1;
-        Cart item = cartService.createCartItem(select.getName(), select.getPrice(), Quantity);
+
+        int Quantity;
+        if( quant == null || quant.isEmpty() ){
+            model.addAttribute("errorMessage", "Item Barcode is required");
+            return "redirect:/customer/catalog";
+        }
+        Quantity = Integer.valueOf(quant);
+        Cart item = cartService.createCartItem(select.getName(), select.getPrice(), (int) Quantity);
         cartService.addToCart(item);
         return "redirect:/customer/catalog";
     }

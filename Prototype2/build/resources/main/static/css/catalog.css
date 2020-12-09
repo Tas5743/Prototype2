@@ -42,3 +42,15 @@ footer {
   border-radius: 0;
 }
 
+th, td {
+  border: 1px solid rgb(190, 190, 190);
+  padding: 10px;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200, 200, 200);
+  letter-spacing: 1px;
+}
+
