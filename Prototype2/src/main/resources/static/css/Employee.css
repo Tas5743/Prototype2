@@ -1,5 +1,14 @@
 table, th, td{
     border: 1px solid black;
+  }
+
+th{
+    color: white;
+    background-color: lightblue;
+}
+
+tr{
+    background-color: lightgrey;
 }
 
 .table1{
@@ -22,7 +31,7 @@ table, th, td{
 
 .table4{
     position: relative;
-    top: -100px;
+    top: -120px;
     left: 600px;
     width: 55%;
 }
@@ -31,4 +40,19 @@ table, th, td{
     position: relative;
     top: 250px;
     left: 50px;
+}
+
+.salary{
+   position: relative;
+   top: 100px;
+   left: 145px;
+   font-size: 20px;
+}
+
+.schedule{
+   position: relative;
+   top: -122px;
+   left: 910px;
+   font-size: 20px;
+   
 }
