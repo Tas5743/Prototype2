@@ -48,7 +48,9 @@
             <ul class="nav navbar-nav">
                 <li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
                 <li><a href="/customer/catalog">Catalog</a></li>
-                <li class="active"><a href="/manager/items/view">Stock View</a></li>
+                <li><a href="/manager/items/view">Stock View</a></li>
+                <li class="active"><a href="/manager/transactions">Transaction View</a></li>
+                <li><a href="/employee">Employee</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/customer/cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
@@ -70,8 +72,8 @@
 <button type="button" class="btn btn-info btn-lg"> <a th:href="@{'/manager/transactions/W'}">Week</a> </button>
 <button type="button" class="btn btn-info btn-lg"> <a th:href="@{'/manager/transactions/M'}">Month</a> </button>
 
-
 <table th:unless="${transactions.size() eq 0}">
+
     <thead>
     <tr>
         <th>Date</th>
