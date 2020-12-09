@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -24,9 +25,9 @@
 
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
+                <li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
                 <li class="active"><a href="/customer/catalog">Catalog</a></li>
-                <<li><a href="/customer/checkout">Checkout</a></li>
+                <li><a href="/manager/items/view">Stock View</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/customer/cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
@@ -41,6 +42,13 @@
         <h1>Catalog</h1>
     </div>
 </div>
+<div align="center">
+    <br>
+    <div id="address_bar">
+        <button type="button" class="btn btn-info btn-lg"> <a href="/"> Back to Index</a> </button>
+        <button type="button" class="btn btn-info btn-lg"> <a href="/customer/cart">Cart</a> </button>
+    </div>
+    <br>
     <div id="catalog_items">
         <table th:unless="${items.size() eq 0}">
             <thead>
@@ -61,11 +69,14 @@
                 <td><p th:text="${item.dPrice()}"></p></td>
                 <td><img class="itemImage" style="display: block" th:src="${item.imageRef}"/></td>
                 <td>
+
                     <form class="add_to_cart_button" method="post" th:action="@{'/customer/catalog/' + ${item.barcode}}">
-                        <button type="submit">Add to Cart</button>
+                        <label>Quantity</label><br>
+                        <input type="text" id="quant" name="quant">
+                        <button type="submit" class="btn btn-success btn-lg>">Add to Cart</button>
                     </form>
                     <form class="view_button" method="post" th:action="@{'/customer/catalog/view/' + ${item.barcode}}">
-                        <button type ="submit">View  </button>
+                        <button type="submit" class="btn btn-success">View</button>
                     </form>
                 </td>
             </tr>
@@ -73,10 +84,7 @@
         </table>
     </div>
 
-    <div id="address_bar">
-        <button> <a href="/">Back to Index</a> </button>
-        <button> <a href="/customer/cart">Cart</a> </button>
-    </div>
 
+</div>
 </body>
 </html>

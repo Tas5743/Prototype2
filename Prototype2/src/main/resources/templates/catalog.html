@@ -69,7 +69,10 @@
                 <td><p th:text="${item.dPrice()}"></p></td>
                 <td><img class="itemImage" style="display: block" th:src="${item.imageRef}"/></td>
                 <td>
+
                     <form class="add_to_cart_button" method="post" th:action="@{'/customer/catalog/' + ${item.barcode}}">
+                        <label>Quantity</label><br>
+                        <input type="text" id="quant" name="quant">
                         <button type="submit" class="btn btn-success btn-lg>">Add to Cart</button>
                     </form>
                     <form class="view_button" method="post" th:action="@{'/customer/catalog/view/' + ${item.barcode}}">

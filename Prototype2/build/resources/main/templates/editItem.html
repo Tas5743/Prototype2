@@ -3,33 +3,97 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Edit Item</title>
-    <link rel="stylesheet" th:href="@{/css/editItem.css}"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
+<style>
+    .header {
+        margin-bottom: 0;
+    }
+</style>
+
 <body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
 
-<h1>Item Info</h1>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                <li><a href="/customer/catalog">Catalog</a></li>
+                <li><a href="/manager/items/view">Stock View</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/customer/cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-<form method="post" th:action="@{'/manager/items/edit'}">
+
+<header>
+    <div class="header">
+        <div class="container text-center">
+            <h1>Edit an Item</h1>
+        </div>
+    </div>
+</header>
+
+
+
+
+<div align="center">
 
     <input type="hidden" name="Barcode"  th:value="${barcode}" />
 
-    <label>Name</label>
-    <input name="Name" th:value="${Name}"/>
+    <div class="row">
+        <div class="three columns">
+            <label>Name</label>
+        </div>
+        <div class="nine columns">
+            <input name="Name" th:value="${Name}"/>
+        </div>
+        <br>
 
-    <label>Quantity</label>
-    <input name="Quantity" th:value="${Quantity}"/>
+        <div class="row">
+            <div class="three columns">
+                <label>Quantity</label>
+            </div>
+            <div class="nine columns">
+                <input name="Quantity" th:value="${Quantity}"/>
+            </div>
+            <br>
 
-    <label>Low Quantity</label>
-    <input name="lQuantity" th:value="${lQuantity}"/>
+            <div class="row">
+                <div class="three columns">
+                    <label>Low Quantity</label>
+                </div>
+                <div class="nine columns">
+                    <input name="lQuantity" th:value="${lQuantity}"/>
+                </div>
+                <br>
 
-    <label>Price</label>
-    <input name="Price" th:value="${Price}"/>
-<div>
+                <div class="row">
+                    <div class="three columns">
+                        <label>Price</label>
+                    </div>
+                    <div class="nine columns">
+                    <input name="Price" th:value="${Price}"/>
+                </div>
+                <br>
+
+    <button type="button" class="btn btn-success btn-lg">Submit</button>
 
 </div>
-
-    <button class="btn btn-default" type="submit">Submit</button>
-</form>
-
 </body>
 </html>

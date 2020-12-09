@@ -24,11 +24,34 @@
   <component name="ChangeListManager">
     <list default="true" id="d234280d-e656-45c1-8161-1ebcb69064d4" name="Default Changelist" comment="More Tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/static/css/catalog.css" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/static/css/catalog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/6.6.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/controller/customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/classes/java/main/com/group7/prototype/controller/customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/static/css/Employee.css" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/static/css/Employee.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/static/css/catalog.css" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/static/css/catalog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/static/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/Employee.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/Employee.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/addItem.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/addItem.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/editItem.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/editItem.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/stockview.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/resources/main/templates/stockview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/controller/customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/java/com/group7/prototype/controller/customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/stockview.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/stockview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/transactionDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/transactionDetail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/transactions.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/transactions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/newUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype2/src/main/resources/templates/newUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prototype2/users1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/users1.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,6 +164,8 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Prototype2/src" />
       <recent name="C:\Users\tyaus\Desktop\Real Homework\Prototype" />
       <recent name="C:\Users\tyaus\Desktop\Real Homework\Prototype\Prototype2" />
     </key>
@@ -148,7 +173,26 @@
       <recent name="com.group7.prototype.service.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Prototype2">
+  <component name="RunManager" selected="Application.Prototype (1)">
+    <configuration name="Prototype (1)" type="Application" factoryName="Application" activateToolWindowBeforeRun="false">
+      <option name="ALTERNATIVE_JRE_PATH" value="11.0.5" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.group7.prototype.PrototypeApplication" />
+      <module name="prototype.main" />
+      <option name="PROGRAM_PARAMETERS" value="$ModuleName$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Prototype" type="Application" factoryName="Application" activateToolWindowBeforeRun="false">
+      <option name="ALTERNATIVE_JRE_PATH" value="11.0.5" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.group7.prototype.PrototypeApplication" />
+      <option name="PROGRAM_PARAMETERS" value="$ModuleName$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ManagerControllerTest.ABV" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -238,6 +282,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Prototype" />
+      <item itemvalue="Application.Prototype (1)" />
+      <item itemvalue="Gradle.ManagerControllerTest.ABV" />
+      <item itemvalue="Gradle.Prototype2" />
+      <item itemvalue="Gradle.Prototype2 [dependencies]" />
+      <item itemvalue="Gradle.Prototype2 [test]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Prototype2" />
@@ -348,5 +400,8 @@
     <MESSAGE value="Ants" />
     <MESSAGE value="No Ants" />
     <option name="LAST_COMMIT_MESSAGE" value="No Ants" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Prototype2$Prototype__1_.ic" NAME="Prototype (1) Coverage Results" MODIFIED="1607453170732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
