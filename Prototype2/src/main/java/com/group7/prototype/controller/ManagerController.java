@@ -125,28 +125,28 @@ public class ManagerController {
     @GetMapping("/manager/transactions")
     public String transactionsTable(Model model){
         model.addAttribute("money", transactionService.total());
-        model.addAttribute("transcations",transactionService.findAllTransactions());
+        model.addAttribute("transactions",transactionService.findAllTransactions());
         return "transactions";
     }
 
     @GetMapping("/manager/transactions/D")
     public String transactionsTableLastDay(Model model) throws ParseException {
         model.addAttribute("money", transactionService.total());
-        model.addAttribute("transcations",transactionService.findTransactionsday());
+        model.addAttribute("transactions",transactionService.findTransactionsday());
         return "transactions";
     }
 
     @GetMapping("/manager/transactions/W")
     public String transactionsTableLastWeek(Model model) throws ParseException {
         model.addAttribute("money", transactionService.total());
-        model.addAttribute("transcations", transactionService.findTransactionsweek());
+        model.addAttribute("transactions", transactionService.findTransactionsweek());
         return "transactions";
     }
 
     @GetMapping("/manager/transactions/M")
     public String transactionsTableLastMonth(Model model) throws ParseException {
         model.addAttribute("money", transactionService.total());
-        model.addAttribute("transcations",transactionService.findTransactionsmonth());
+        model.addAttribute("transactions",transactionService.findTransactionsmonth());
         return "transactions";
     }
 
