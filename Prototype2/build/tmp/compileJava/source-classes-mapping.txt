@@ -38,13 +38,13 @@ com/group7/prototype/controller/customer.java
  com.group7.prototype.controller.customer
 com/group7/prototype/repository/impl/CartRepositoryimpl.java
  com.group7.prototype.repository.impl.CartRepositoryimpl
-com/group7/prototype/repository/impl/ItemRepositoryImpl.java
- com.group7.prototype.repository.impl.ItemRepositoryImpl
+com/group7/prototype/controller/ManagerController.java
+ com.group7.prototype.controller.ManagerController
 com/group7/prototype/model/Item.java
  com.group7.prototype.model.Item
 com/group7/prototype/repository/impl/TransactionsRepositoryimpl.java
  com.group7.prototype.repository.impl.TransactionsRepositoryimpl
 com/group7/prototype/repository/TransactionsRepository.java
  com.group7.prototype.repository.TransactionsRepository
-com/group7/prototype/controller/ManagerController.java
- com.group7.prototype.controller.ManagerController
+com/group7/prototype/repository/impl/ItemRepositoryImpl.java
+ com.group7.prototype.repository.impl.ItemRepositoryImpl

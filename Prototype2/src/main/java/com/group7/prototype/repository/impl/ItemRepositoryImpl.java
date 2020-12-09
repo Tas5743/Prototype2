@@ -46,7 +46,7 @@ public class ItemRepositoryImpl implements ItemRepository {
             foundItem.setPrice(Double.parseDouble(price));
             foundItem.setiInfo(iInfo);
             foundItem.setiDesc(iDesc);
-            foundItem.setName(imageRef);
+            foundItem.setImageRef(imageRef);
         }
 
         if (foundItem == null) return null;

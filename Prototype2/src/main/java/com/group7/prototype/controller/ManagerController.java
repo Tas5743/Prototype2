@@ -93,6 +93,9 @@ public class ManagerController {
             model.addAttribute("Quantity", item.getQuantity());
             model.addAttribute("lQuantity", item.getlQuantity());
             model.addAttribute("Price", item.getPrice());
+            model.addAttribute("iDesc",item.getiDesc());
+            model.addAttribute("iInfo",item.getiInfo());
+            model.addAttribute("imageRef",item.getImageRef());
             return "editItem";
         }
         else {

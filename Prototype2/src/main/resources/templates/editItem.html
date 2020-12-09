@@ -55,15 +55,15 @@
 
 
 <div align="center">
-
-    <input type="hidden" name="Barcode"  th:value="${barcode}" />
+    <form method="post" th:action="@{'/manager/items/edit'}">
+    <input type="hidden" name="itemBarcode"  th:value="${barcode}" />
 
     <div class="row">
         <div class="three columns">
             <label>Name</label>
         </div>
         <div class="nine columns">
-            <input name="Name" th:value="${Name}"/>
+            <input name="itemName" th:value="${Name}"/>
         </div>
     </div>
     <br>
@@ -73,7 +73,7 @@
             <label>Quantity</label>
         </div>
         <div class="nine columns">
-            <input name="Quantity" th:value="${Quantity}"/>
+            <input name="itemQuantity" th:value="${Quantity}"/>
         </div>
     </div>
     <br>
@@ -83,7 +83,7 @@
             <label>Low Quantity</label>
         </div>
         <div class="nine columns">
-            <input name="lQuantity" th:value="${lQuantity}"/>
+            <input name="itemLQuantity" th:value="${lQuantity}"/>
         </div>
     </div>
     <br>
@@ -93,7 +93,7 @@
             <label>Price</label>
         </div>
         <div class="nine columns">
-            <input name="Price" th:value="${Price}"/>
+            <input name="itemPrice" th:value="${Price}"/>
         </div>
     </div>
     <br>
@@ -102,7 +102,7 @@
             <label>Info</label>
         </div>
         <div class="nine columns">
-            <input name ="iInfo" />
+            <input name ="iInfo" th:value="${iDesc}" />
         </div>
     </div>
     <br>
@@ -111,7 +111,7 @@
             <label>Description</label>
         </div>
         <div class="nine columns">
-            <input name ="IDesc" />
+            <input name ="iDesc" th:value="${iInfo}" />
         </div>
     </div>
     <br>
@@ -120,13 +120,13 @@
             <label>Image Link</label>
         </div>
         <div class="nine columns">
-            <input name ="imageRef" />
+            <input name ="imageRef" th:value="${imageRef}" />
         </div>
     </div>
     <br>
 
-    <button type="button" class="btn btn-success btn-lg">Submit</button>
-
+    <button type="submit" class="btn btn-success btn-lg">Submit</button>
+    </form>
 </div>
 </body>
 </html>

@@ -55,7 +55,7 @@
 <!--    <div th:if="${'errorMessage'}" th:text="${'errorMessage'}" style="color: #ff0000;">Invalid Entry</div>-->
 
 <div align="center">
-    <form method="post" action="/manager/items/add">
+    <form method="post" th:action="@{'/manager/items/add'}">
 
         <div class="row">
             <div class="three columns">
@@ -121,7 +121,7 @@
                 <label>Description</label>
             </div>
             <div class="nine columns">
-                <input name ="IDesc" />
+                <input name ="iDesc" />
             </div>
         </div>
         <br>
@@ -141,7 +141,7 @@
 
             </div>
         </div>
-        <button type="button" class="btn btn-success btn-lg">Submit</button>
+        <button type="submit" class="btn btn-success btn-lg">Submit</button>
     </form>
 </div>
 </body>

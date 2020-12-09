@@ -31,6 +31,8 @@
                 <li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
                 <li><a href="/customer/catalog">Catalog</a></li>
                 <li><a href="/manager/items/view">Stock View</a></li>
+                <li><a href="/manager/transactions">Transaction View</a></li>
+                <li><a href="/employee">Employee</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/customer/cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
@@ -44,7 +46,7 @@
 <header>
     <div class="header">
         <div class="container text-center">
-            <h1>Add an Item</h1>
+            <h1>Add Item</h1>
         </div>
     </div>
 </header>
@@ -53,7 +55,7 @@
 <!--    <div th:if="${'errorMessage'}" th:text="${'errorMessage'}" style="color: #ff0000;">Invalid Entry</div>-->
 
 <div align="center">
-    <form method="post" action="/manager/items/add">
+    <form method="post" th:action="@{'/manager/items/add'}">
 
         <div class="row">
             <div class="three columns">
@@ -105,6 +107,33 @@
             </div>
         </div>
         <br>
+        <div class="row">
+            <div class="three columns">
+                <label>Info</label>
+            </div>
+            <div class="nine columns">
+                <input name ="iInfo" />
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="three columns">
+                <label>Description</label>
+            </div>
+            <div class="nine columns">
+                <input name ="iDesc" />
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="three columns">
+                <label>Image Link</label>
+            </div>
+            <div class="nine columns">
+                <input name ="imageRef" />
+            </div>
+        </div>
+        <br>
 
         <div class="row">
             <div class="three columns">&nbsp;</div>
@@ -112,7 +141,7 @@
 
             </div>
         </div>
-        <button type="button" class="btn btn-success btn-lg">Submit</button>
+        <button type="submit" class="btn btn-success btn-lg">Submit</button>
     </form>
 </div>
 </body>

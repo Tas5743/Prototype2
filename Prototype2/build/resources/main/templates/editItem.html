@@ -32,6 +32,8 @@
                 <li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
                 <li><a href="/customer/catalog">Catalog</a></li>
                 <li><a href="/manager/items/view">Stock View</a></li>
+                <li><a href="/manager/transactions">Transaction View</a></li>
+                <li><a href="/employee">Employee</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/customer/cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
@@ -44,7 +46,7 @@
 <header>
     <div class="header">
         <div class="container text-center">
-            <h1>Edit an Item</h1>
+            <h1>Edit Item</h1>
         </div>
     </div>
 </header>
@@ -53,47 +55,78 @@
 
 
 <div align="center">
-
-    <input type="hidden" name="Barcode"  th:value="${barcode}" />
+    <form method="post" th:action="@{'/manager/items/edit'}">
+    <input type="hidden" name="itemBarcode"  th:value="${barcode}" />
 
     <div class="row">
         <div class="three columns">
             <label>Name</label>
         </div>
         <div class="nine columns">
-            <input name="Name" th:value="${Name}"/>
+            <input name="itemName" th:value="${Name}"/>
         </div>
-        <br>
+    </div>
+    <br>
 
-        <div class="row">
-            <div class="three columns">
-                <label>Quantity</label>
-            </div>
-            <div class="nine columns">
-                <input name="Quantity" th:value="${Quantity}"/>
-            </div>
-            <br>
+    <div class="row">
+        <div class="three columns">
+            <label>Quantity</label>
+        </div>
+        <div class="nine columns">
+            <input name="itemQuantity" th:value="${Quantity}"/>
+        </div>
+    </div>
+    <br>
 
-            <div class="row">
-                <div class="three columns">
-                    <label>Low Quantity</label>
-                </div>
-                <div class="nine columns">
-                    <input name="lQuantity" th:value="${lQuantity}"/>
-                </div>
-                <br>
+    <div class="row">
+        <div class="three columns">
+            <label>Low Quantity</label>
+        </div>
+        <div class="nine columns">
+            <input name="itemLQuantity" th:value="${lQuantity}"/>
+        </div>
+    </div>
+    <br>
 
-                <div class="row">
-                    <div class="three columns">
-                        <label>Price</label>
-                    </div>
-                    <div class="nine columns">
-                    <input name="Price" th:value="${Price}"/>
-                </div>
-                <br>
+    <div class="row">
+        <div class="three columns">
+            <label>Price</label>
+        </div>
+        <div class="nine columns">
+            <input name="itemPrice" th:value="${Price}"/>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="three columns">
+            <label>Info</label>
+        </div>
+        <div class="nine columns">
+            <input name ="iInfo" th:value="${iDesc}" />
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="three columns">
+            <label>Description</label>
+        </div>
+        <div class="nine columns">
+            <input name ="iDesc" th:value="${iInfo}" />
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="three columns">
+            <label>Image Link</label>
+        </div>
+        <div class="nine columns">
+            <input name ="imageRef" th:value="${imageRef}" />
+        </div>
+    </div>
+    <br>
 
-    <button type="button" class="btn btn-success btn-lg">Submit</button>
-
+    <button type="submit" class="btn btn-success btn-lg">Submit</button>
+    </form>
 </div>
 </body>
 </html>
