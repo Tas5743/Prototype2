@@ -1,0 +1,2 @@
+John:Doe:johndoe@gmail.com:John123:C
+Jane:Doe:manager@manager.com:manager:M
